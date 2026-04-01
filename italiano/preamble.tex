@@ -1,0 +1,60 @@
+% Italian edition preamble — pdfLaTeX + utf8 + Italian babel
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% Italian babel not installed on this system; using English hyphenation patterns.
+% The text content (Italian) is unaffected; line breaking is helped below with
+% a modest emergency stretch so narrow A5 print pages do not produce clipped lines.
+\usepackage[english]{babel}
+
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=2cm}
+
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{parskip}
+\emergencystretch=2em
+\tolerance=1500
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdftitle={Che cos'\`e il comunismo?},
+  pdfauthor={Gruppo Engels},
+  pdfsubject={Teoria del comunismo},
+  pdfkeywords={comunismo, marxismo, Marx, Engels, Lenin},
+  pdfencoding=auto,
+  unicode=true,
+}
+
+\usepackage{etoolbox}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\centering\large\bfseries}{}{0pt}{}
+\titleformat{\section}[block]{\centering\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\chapter}{0pt}{24pt}{12pt}
+\titlespacing*{\section}{0pt}{18pt}{9pt}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}{../extracted/images/}{./}{../}}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{plain}
+
+\usepackage{tocbibind}
+\usepackage{tocloft}
+
+\usepackage{subfiles}
+\usepackage{eso-pic}
+\pretocmd{\section}{\phantomsection}{}{}
+
+% No chapter/section numbering for this unnumbered work
+\setcounter{secnumdepth}{0}

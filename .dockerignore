@@ -1,0 +1,6 @@
+out/
+.git/
+*.log
+*.aux
+*.out
+*.toc

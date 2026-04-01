@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{preamble}
+\begin{document}
+\pagenumbering{gobble}
+
+% ── Page 1: full-page cover image ───────────────────────────────
+{%
+  \AddToShipoutPictureBG*{%
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{images/img-000.jpg}%
+  }%
+  \thispagestyle{empty}%
+  \null\clearpage
+}
+
+% ── Page 2: name / logo / year ──────────────────────────────────
+\thispagestyle{empty}
+\begin{center}
+\vspace*{3cm}
+\includegraphics[width=0.8\textwidth]{images/img-001.jpg}\\[2cm]
+{\Huge\bfseries Что такое коммунизм?}\\[1cm]
+{\large Группа Энгельс}\\[0.5cm]
+{\large 2018}
+\vfill
+\end{center}
+\clearpage
+
+% ── Page 3: TOC ─────────────────────────────────────────────────
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% ── Parts ───────────────────────────────────────────────────────
+\subfile{parts/01_izobretaem_ochki}
+\subfile{parts/02_predislovie}
+\subfile{parts/03_osnovanie}
+\subfile{parts/04_kommunizm_realnost}
+\subfile{parts/05_obshhaya_sobstvennost}
+\subfile{parts/06_necessitatem_truda}
+\subfile{parts/07_kommunizm_upravlenie}
+\subfile{parts/08_kommunizm_lichnost}
+\subfile{parts/09_kommunizm_semya}
+\subfile{parts/10_kommunizm_soznanie}
+\subfile{parts/11_zaklyuchenie}
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{preamble}
+\begin{document}
+\pagenumbering{gobble}
+
+% ── Pagina 1: copertina a tutta pagina ──────────────────────────
+{%
+  \AddToShipoutPictureBG*{%
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{images/img-000.jpg}%
+  }%
+  \thispagestyle{empty}%
+  \null\clearpage
+}
+
+% ── Pagina 2: logo / titolo / anno ──────────────────────────────
+\thispagestyle{empty}
+\begin{center}
+\vspace*{3cm}
+\includegraphics[width=0.8\textwidth]{images/img-001.jpg}\\[2cm]
+{\Huge\bfseries Che cos'\`{e} il comunismo?}\\[1cm]
+{\large Gruppo Engels}\\[0.5cm]
+{\small Traduzione dal russo con \texttt{translategemma:27b}}\\[0.4cm]
+{\large 2018}
+\vfill
+\end{center}
+\clearpage
+
+% ── Pagina 3: indice ─────────────────────────────────────────────
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% ── Sezioni ──────────────────────────────────────────────────────
+\subfile{parts/01_inventiamo_occhiali}
+\subfile{parts/02_prefazione}
+\subfile{parts/03_fondamenti}
+\subfile{parts/04_comunismo_realta}
+\subfile{parts/05_proprieta_comune}
+\subfile{parts/06_opera_necessaria}
+\subfile{parts/07_comunismo_gestione}
+\subfile{parts/08_comunismo_individuo}
+\subfile{parts/09_comunismo_famiglia}
+\subfile{parts/10_comunismo_coscienza}
+\subfile{parts/11_conclusione}
+
+\end{document}
