@@ -1,0 +1,1810 @@
+{
+  "_about": "Russian glossary sources shared by every language. 'forms' lists the inflected forms by hand when automatic matching would miss them or catch unrelated words; otherwise tools/glossary/build.py finds the forms in the Russian text. Targets live in targets.<code>.json.",
+  "terms": [
+    {
+      "source": "Что такое коммунизм?",
+      "category": "title"
+    },
+    {
+      "source": "Группа Энгельс",
+      "category": "organization"
+    },
+    {
+      "source": "Изобретаем «очки-велосипед»",
+      "category": "title"
+    },
+    {
+      "source": "Предисловие",
+      "category": "title"
+    },
+    {
+      "source": "Основание коммунизма",
+      "category": "title"
+    },
+    {
+      "source": "Коммунизм как реальность в общественном производстве",
+      "category": "title"
+    },
+    {
+      "source": "Общая (общественная) собственность",
+      "category": "title"
+    },
+    {
+      "source": "Необходимый труд и условия для коммунистической деятельности",
+      "category": "title"
+    },
+    {
+      "source": "Коммунизм и управление общественной жизнью",
+      "category": "title"
+    },
+    {
+      "source": "Коммунизм и личность",
+      "category": "title"
+    },
+    {
+      "source": "Коммунизм и семья",
+      "category": "title"
+    },
+    {
+      "source": "Коммунизм и общественное сознание",
+      "category": "title"
+    },
+    {
+      "source": "Заключение",
+      "category": "title"
+    },
+    {
+      "source": "Маркс",
+      "category": "person"
+    },
+    {
+      "source": "Энгельс",
+      "category": "person"
+    },
+    {
+      "source": "Фридрих Энгельс",
+      "category": "person"
+    },
+    {
+      "source": "Ленин",
+      "category": "person"
+    },
+    {
+      "source": "Фейербах",
+      "category": "person"
+    },
+    {
+      "source": "Бенедикт Спиноза",
+      "category": "person"
+    },
+    {
+      "source": "Гегель",
+      "category": "person"
+    },
+    {
+      "source": "Григорий Горин",
+      "category": "person"
+    },
+    {
+      "source": "Мюнхгаузен",
+      "category": "person"
+    },
+    {
+      "source": "Маяковский",
+      "category": "person"
+    },
+    {
+      "source": "Константин Сёмин",
+      "category": "person"
+    },
+    {
+      "source": "Евгений Спицин",
+      "category": "person"
+    },
+    {
+      "source": "Спицин",
+      "category": "person"
+    },
+    {
+      "source": "Никита Михалков",
+      "category": "person"
+    },
+    {
+      "source": "Михалков",
+      "category": "person"
+    },
+    {
+      "source": "Глушков",
+      "category": "person"
+    },
+    {
+      "source": "Виктор Михайлович Глушков",
+      "category": "person"
+    },
+    {
+      "source": "В. М. Глушков",
+      "category": "person",
+      "forms": [
+        "В. М. Глушков",
+        "В. М. Глушкова"
+      ]
+    },
+    {
+      "source": "Макаренко",
+      "category": "person"
+    },
+    {
+      "source": "Антон Семенович",
+      "category": "person"
+    },
+    {
+      "source": "Горький",
+      "category": "person"
+    },
+    {
+      "source": "Дзержинский",
+      "category": "person"
+    },
+    {
+      "source": "Прудон",
+      "category": "person"
+    },
+    {
+      "source": "Фурье",
+      "category": "person"
+    },
+    {
+      "source": "Сен-Симон",
+      "category": "person"
+    },
+    {
+      "source": "Оуэн",
+      "category": "person"
+    },
+    {
+      "source": "Бакунин",
+      "category": "person"
+    },
+    {
+      "source": "Арнольд Руге",
+      "category": "person"
+    },
+    {
+      "source": "Александра Коллонтай",
+      "category": "person"
+    },
+    {
+      "source": "Коллонтай",
+      "category": "person"
+    },
+    {
+      "source": "Илья Эренбург",
+      "category": "person"
+    },
+    {
+      "source": "Вася",
+      "category": "person",
+      "forms": [
+        "Вася",
+        "Васи",
+        "Васе",
+        "Васю",
+        "Васей"
+      ]
+    },
+    {
+      "source": "Петя",
+      "category": "person",
+      "forms": [
+        "Петя",
+        "Пети",
+        "Пете",
+        "Петю",
+        "Петей"
+      ]
+    },
+    {
+      "source": "Тот самый Мюнхгаузен",
+      "category": "title",
+      "forms": [
+        "Тот самый Мюнхгаузен",
+        "того самого Мюнхгаузена"
+      ]
+    },
+    {
+      "source": "Последний звонок",
+      "category": "title"
+    },
+    {
+      "source": "Цитадель",
+      "category": "title"
+    },
+    {
+      "source": "Критика Готской программы",
+      "category": "title",
+      "forms": [
+        "Критика Готской программы",
+        "Критикуя Готскую программу"
+      ]
+    },
+    {
+      "source": "Готская программа",
+      "category": "title"
+    },
+    {
+      "source": "Великий почин",
+      "category": "title"
+    },
+    {
+      "source": "Эльберфельдские речи",
+      "category": "title"
+    },
+    {
+      "source": "Государство и революция",
+      "category": "title"
+    },
+    {
+      "source": "Манифест коммунистической партии",
+      "category": "title"
+    },
+    {
+      "source": "Манифест",
+      "category": "title",
+      "forms": [
+        "Манифест",
+        "Манифеста",
+        "Манифесту",
+        "Манифестом",
+        "Манифесте"
+      ]
+    },
+    {
+      "source": "Экономическо-философские рукописи 1844 года",
+      "category": "title"
+    },
+    {
+      "source": "Рукописи",
+      "category": "title",
+      "forms": [
+        "Рукописи",
+        "Рукописей",
+        "Рукописям",
+        "Рукописях"
+      ]
+    },
+    {
+      "source": "Экономические рукописи 1857–1859 годов",
+      "category": "title",
+      "forms": [
+        "Экономические рукописи 1857–1859 годов",
+        "Экономических рукописей 1857–1859"
+      ]
+    },
+    {
+      "source": "Капитал",
+      "category": "title",
+      "forms": [
+        "Капитал",
+        "Капитала",
+        "Капиталу",
+        "Капиталом",
+        "Капитале"
+      ]
+    },
+    {
+      "source": "Происхождение семьи, частной собственности и государства",
+      "category": "title"
+    },
+    {
+      "source": "Дорогу крылатому Эросу!",
+      "category": "title"
+    },
+    {
+      "source": "Василиса Малыгина",
+      "category": "title"
+    },
+    {
+      "source": "Большая любовь",
+      "category": "title"
+    },
+    {
+      "source": "День второй",
+      "category": "title"
+    },
+    {
+      "source": "Что делать?",
+      "category": "title"
+    },
+    {
+      "source": "Раб. Дело",
+      "category": "title"
+    },
+    {
+      "source": "К критике гегелевской философии права",
+      "category": "title"
+    },
+    {
+      "source": "тезисы о Фейербахе",
+      "category": "title"
+    },
+    {
+      "source": "СССР",
+      "category": "acronym",
+      "forms": [
+        "СССР"
+      ]
+    },
+    {
+      "source": "Советский Союз",
+      "category": "place"
+    },
+    {
+      "source": "РФ",
+      "category": "acronym",
+      "forms": [
+        "РФ"
+      ]
+    },
+    {
+      "source": "США",
+      "category": "acronym",
+      "forms": [
+        "США"
+      ]
+    },
+    {
+      "source": "МОТ",
+      "category": "acronym",
+      "forms": [
+        "МОТ"
+      ]
+    },
+    {
+      "source": "ПО",
+      "category": "acronym",
+      "forms": [
+        "ПО"
+      ]
+    },
+    {
+      "source": "нэп",
+      "category": "acronym",
+      "forms": [
+        "нэп",
+        "нэпа",
+        "нэпу",
+        "нэпом",
+        "нэпе",
+        "НЭП",
+        "НЭПа"
+      ]
+    },
+    {
+      "source": "ликбез",
+      "category": "acronym"
+    },
+    {
+      "source": "всеобуч",
+      "category": "acronym"
+    },
+    {
+      "source": "соцлагерь",
+      "category": "organization"
+    },
+    {
+      "source": "большевики",
+      "category": "organization"
+    },
+    {
+      "source": "советы",
+      "category": "organization"
+    },
+    {
+      "source": "Советы рабочих, солдатских и крестьянских депутатов",
+      "category": "organization"
+    },
+    {
+      "source": "Всемирная республика Советов",
+      "category": "organization"
+    },
+    {
+      "source": "Временное правительство",
+      "category": "organization"
+    },
+    {
+      "source": "царское правительство",
+      "category": "organization"
+    },
+    {
+      "source": "Интернационал",
+      "category": "organization"
+    },
+    {
+      "source": "Парижская Коммуна",
+      "category": "event"
+    },
+    {
+      "source": "Государственный комитет статистики",
+      "category": "organization"
+    },
+    {
+      "source": "Институт демографии НАН Украины",
+      "category": "organization"
+    },
+    {
+      "source": "колония имени Горького",
+      "category": "organization"
+    },
+    {
+      "source": "коммуна имени Дзержинского",
+      "category": "organization"
+    },
+    {
+      "source": "физиократы",
+      "category": "organization"
+    },
+    {
+      "source": "тред-юнионы",
+      "category": "organization"
+    },
+    {
+      "source": "революционные интернационалисты",
+      "category": "organization"
+    },
+    {
+      "source": "Макдональдс",
+      "category": "organization"
+    },
+    {
+      "source": "Linux",
+      "category": "organization"
+    },
+    {
+      "source": "Windows",
+      "category": "organization"
+    },
+    {
+      "source": "Москва",
+      "category": "place"
+    },
+    {
+      "source": "Куба",
+      "category": "place"
+    },
+    {
+      "source": "Дрезден",
+      "category": "place"
+    },
+    {
+      "source": "Донбасс",
+      "category": "place"
+    },
+    {
+      "source": "Приднестровье",
+      "category": "place"
+    },
+    {
+      "source": "Абхазия",
+      "category": "place"
+    },
+    {
+      "source": "Южная Осетия",
+      "category": "place"
+    },
+    {
+      "source": "Нагорный Карабах",
+      "category": "place"
+    },
+    {
+      "source": "Таджикистан",
+      "category": "place"
+    },
+    {
+      "source": "нацистская Германия",
+      "category": "place"
+    },
+    {
+      "source": "среднеазиатские республики",
+      "category": "place"
+    },
+    {
+      "source": "Московско-Казанская железная дорога",
+      "category": "place"
+    },
+    {
+      "source": "Октябрь",
+      "category": "event",
+      "forms": [
+        "Октябрь",
+        "Октября",
+        "Октябрю",
+        "Октябрём",
+        "Октябре"
+      ]
+    },
+    {
+      "source": "Великая Октябрьская Революция",
+      "category": "event"
+    },
+    {
+      "source": "Великая Октябрьская социалистическая революция",
+      "category": "event"
+    },
+    {
+      "source": "Февральская революция",
+      "category": "event"
+    },
+    {
+      "source": "июльские события 1917 года",
+      "category": "event",
+      "forms": [
+        "июльские события 1917 года",
+        "июльских событий"
+      ]
+    },
+    {
+      "source": "двоевластие",
+      "category": "concept"
+    },
+    {
+      "source": "Мировая Революция",
+      "category": "event"
+    },
+    {
+      "source": "военный коммунизм",
+      "category": "event"
+    },
+    {
+      "source": "индустриализация",
+      "category": "event"
+    },
+    {
+      "source": "гражданская война",
+      "category": "event"
+    },
+    {
+      "source": "Первая Мировая",
+      "category": "event"
+    },
+    {
+      "source": "Великая Отечественная война",
+      "category": "event"
+    },
+    {
+      "source": "чеченские войны",
+      "category": "event"
+    },
+    {
+      "source": "коммунистический субботник",
+      "category": "event"
+    },
+    {
+      "source": "субботник",
+      "category": "event"
+    },
+    {
+      "source": "Средние века",
+      "category": "event"
+    },
+    {
+      "source": "распад СССР",
+      "category": "event"
+    },
+    {
+      "source": "реставрация капитализма",
+      "category": "concept"
+    },
+    {
+      "source": "молочная кухня",
+      "category": "organization"
+    },
+    {
+      "source": "коммуна-общежитие",
+      "category": "concept",
+      "forms": [
+        "коммуна-общежитие",
+        "коммун-общежитий"
+      ]
+    },
+    {
+      "source": "сын полка",
+      "category": "phrase"
+    },
+    {
+      "source": "беспризорность",
+      "category": "concept"
+    },
+    {
+      "source": "очки-велосипед",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственно-коллективная форма",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственная коллективность",
+      "category": "concept"
+    },
+    {
+      "source": "формы коллективности",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственно-общественный",
+      "category": "concept"
+    },
+    {
+      "source": "свободная деятельность",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистическая деятельность",
+      "category": "concept"
+    },
+    {
+      "source": "ростки коммунизма",
+      "category": "concept"
+    },
+    {
+      "source": "зародыш",
+      "category": "concept"
+    },
+    {
+      "source": "клеточка",
+      "category": "concept"
+    },
+    {
+      "source": "хозяйственная ячейка",
+      "category": "concept"
+    },
+    {
+      "source": "товарное производство",
+      "category": "concept"
+    },
+    {
+      "source": "товар",
+      "category": "concept"
+    },
+    {
+      "source": "товарная форма",
+      "category": "concept"
+    },
+    {
+      "source": "товаровладелец",
+      "category": "concept",
+      "forms": [
+        "товаровладелец",
+        "товаровладельцы",
+        "товаровладельцев",
+        "товаровладельца"
+      ]
+    },
+    {
+      "source": "товаропроизводитель",
+      "category": "concept"
+    },
+    {
+      "source": "вещное производство",
+      "category": "concept"
+    },
+    {
+      "source": "вещный характер труда",
+      "category": "concept"
+    },
+    {
+      "source": "вещный труд",
+      "category": "concept"
+    },
+    {
+      "source": "самостоятельно-вещная форма",
+      "category": "concept"
+    },
+    {
+      "source": "способ производства",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистический способ производства",
+      "category": "concept"
+    },
+    {
+      "source": "производственные отношения",
+      "category": "concept"
+    },
+    {
+      "source": "общественные отношения",
+      "category": "concept"
+    },
+    {
+      "source": "производительные силы",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственная производительная сила",
+      "category": "concept"
+    },
+    {
+      "source": "средства производства",
+      "category": "concept"
+    },
+    {
+      "source": "предмет труда",
+      "category": "concept"
+    },
+    {
+      "source": "общественный уклад",
+      "category": "concept"
+    },
+    {
+      "source": "общественное устройство",
+      "category": "concept"
+    },
+    {
+      "source": "общественный строй",
+      "category": "concept"
+    },
+    {
+      "source": "общественное богатство",
+      "category": "concept"
+    },
+    {
+      "source": "общественное бытие",
+      "category": "concept"
+    },
+    {
+      "source": "общественное бытие определяет общественное сознание",
+      "category": "quote"
+    },
+    {
+      "source": "общественное сознание",
+      "category": "concept"
+    },
+    {
+      "source": "формы общественного сознания",
+      "category": "concept"
+    },
+    {
+      "source": "классовое сознание",
+      "category": "concept"
+    },
+    {
+      "source": "индивидуальное сознание",
+      "category": "concept"
+    },
+    {
+      "source": "мифологическое сознание",
+      "category": "concept"
+    },
+    {
+      "source": "материалистическое понимание истории",
+      "category": "concept"
+    },
+    {
+      "source": "содержательная форма",
+      "category": "concept"
+    },
+    {
+      "source": "универсальное отношение",
+      "category": "concept"
+    },
+    {
+      "source": "самоценность деятельности",
+      "category": "concept"
+    },
+    {
+      "source": "предметная деятельность",
+      "category": "concept"
+    },
+    {
+      "source": "предметно-практическое существо",
+      "category": "concept"
+    },
+    {
+      "source": "созерцание",
+      "category": "concept"
+    },
+    {
+      "source": "практика",
+      "category": "concept"
+    },
+    {
+      "source": "товарищество",
+      "category": "concept"
+    },
+    {
+      "source": "свободная ассоциация",
+      "category": "concept"
+    },
+    {
+      "source": "свободная и равная ассоциация производителей",
+      "category": "quote"
+    },
+    {
+      "source": "самодействующая и самоуправляемая ассоциация",
+      "category": "concept"
+    },
+    {
+      "source": "социальное творчество",
+      "category": "concept"
+    },
+    {
+      "source": "самодетерминация",
+      "category": "concept"
+    },
+    {
+      "source": "самовозрастание",
+      "category": "concept"
+    },
+    {
+      "source": "освоение",
+      "category": "concept"
+    },
+    {
+      "source": "присвоение",
+      "category": "concept"
+    },
+    {
+      "source": "частный характер присвоения",
+      "category": "concept"
+    },
+    {
+      "source": "общественный характер присвоения",
+      "category": "concept"
+    },
+    {
+      "source": "по меркам истины, добра и красоты",
+      "category": "phrase"
+    },
+    {
+      "source": "по меркам свободы",
+      "category": "phrase"
+    },
+    {
+      "source": "на острие противоречий",
+      "category": "phrase"
+    },
+    {
+      "source": "целенаправленно",
+      "category": "phrase"
+    },
+    {
+      "source": "разбазаривание",
+      "category": "concept"
+    },
+    {
+      "source": "материалистические друзья гегелевской диалектики",
+      "category": "quote",
+      "forms": [
+        "материалистические друзья гегелевской диалектики",
+        "материалистических друзей гегелевской диалектики"
+      ]
+    },
+    {
+      "source": "первейшая жизненная потребность",
+      "category": "quote"
+    },
+    {
+      "source": "первой потребностью жизни",
+      "category": "quote"
+    },
+    {
+      "source": "без нормы и вознаграждения",
+      "category": "quote"
+    },
+    {
+      "source": "управление вещами",
+      "category": "quote"
+    },
+    {
+      "source": "управление людьми",
+      "category": "quote"
+    },
+    {
+      "source": "управление общественной жизнью",
+      "category": "concept"
+    },
+    {
+      "source": "управление общественным развитием",
+      "category": "concept"
+    },
+    {
+      "source": "управлять государством",
+      "category": "phrase"
+    },
+    {
+      "source": "осознанная необходимость",
+      "category": "quote"
+    },
+    {
+      "source": "Каждый по способностям, каждому по потребностям",
+      "category": "quote"
+    },
+    {
+      "source": "высшая фаза коммунизма",
+      "category": "concept"
+    },
+    {
+      "source": "низшая фаза коммунизма",
+      "category": "concept"
+    },
+    {
+      "source": "первая фаза коммунистического общества",
+      "category": "concept"
+    },
+    {
+      "source": "переходный период",
+      "category": "concept"
+    },
+    {
+      "source": "разделение труда",
+      "category": "concept"
+    },
+    {
+      "source": "общественное разделение труда",
+      "category": "concept"
+    },
+    {
+      "source": "снятие разделения труда",
+      "category": "concept"
+    },
+    {
+      "source": "снятие",
+      "category": "concept",
+      "forms": [
+        "снятие",
+        "снятия",
+        "снятию",
+        "снятием",
+        "снятии"
+      ]
+    },
+    {
+      "source": "упразднение",
+      "category": "concept"
+    },
+    {
+      "source": "уничтожение частной собственности",
+      "category": "concept"
+    },
+    {
+      "source": "положительное упразднение частной собственности",
+      "category": "quote"
+    },
+    {
+      "source": "противоположность умственного и физического труда",
+      "category": "concept"
+    },
+    {
+      "source": "буржуазное право",
+      "category": "concept"
+    },
+    {
+      "source": "всестороннее развитие",
+      "category": "concept"
+    },
+    {
+      "source": "универсально-развитая личность",
+      "category": "concept",
+      "forms": [
+        "универсально-развитая личность",
+        "универсально-развитых личностей"
+      ]
+    },
+    {
+      "source": "универсальный творец",
+      "category": "concept",
+      "forms": [
+        "универсальный творец",
+        "универсальным творцом",
+        "универсального творца"
+      ]
+    },
+    {
+      "source": "личность",
+      "category": "concept"
+    },
+    {
+      "source": "личность-творец",
+      "category": "concept",
+      "forms": [
+        "личность-творец",
+        "личностей-творцов",
+        "личности-творцы"
+      ]
+    },
+    {
+      "source": "дурная индивидуальность",
+      "category": "concept"
+    },
+    {
+      "source": "истинная индивидуальность",
+      "category": "concept"
+    },
+    {
+      "source": "становление сущности человека",
+      "category": "concept"
+    },
+    {
+      "source": "становление",
+      "category": "concept"
+    },
+    {
+      "source": "становящийся человек",
+      "category": "concept",
+      "forms": [
+        "становящийся человек",
+        "становящегося человека"
+      ]
+    },
+    {
+      "source": "человеческая сущность",
+      "category": "concept"
+    },
+    {
+      "source": "целостный человек",
+      "category": "concept"
+    },
+    {
+      "source": "общественный человек",
+      "category": "concept"
+    },
+    {
+      "source": "новый человек",
+      "category": "concept"
+    },
+    {
+      "source": "минимум человечности",
+      "category": "concept"
+    },
+    {
+      "source": "частная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "личная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "общая собственность",
+      "category": "concept"
+    },
+    {
+      "source": "общественная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "семейная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "земельная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "земельная рента",
+      "category": "concept"
+    },
+    {
+      "source": "частный собственник",
+      "category": "concept"
+    },
+    {
+      "source": "всеобщая частная собственность",
+      "category": "concept"
+    },
+    {
+      "source": "грубый коммунизм",
+      "category": "concept"
+    },
+    {
+      "source": "общность жён",
+      "category": "concept"
+    },
+    {
+      "source": "псевдокоммунизм",
+      "category": "concept"
+    },
+    {
+      "source": "обобществление нищеты",
+      "category": "phrase"
+    },
+    {
+      "source": "Всё отнять и поделить",
+      "category": "phrase"
+    },
+    {
+      "source": "обобществление",
+      "category": "concept"
+    },
+    {
+      "source": "формальное обобществление",
+      "category": "concept"
+    },
+    {
+      "source": "реальное обобществление",
+      "category": "concept"
+    },
+    {
+      "source": "рабочая сила",
+      "category": "concept"
+    },
+    {
+      "source": "купля-продажа рабочей силы",
+      "category": "concept",
+      "forms": [
+        "купля-продажа рабочей силы",
+        "купли-продажи рабочей силы"
+      ]
+    },
+    {
+      "source": "наёмный труд",
+      "category": "concept"
+    },
+    {
+      "source": "необходимый труд",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочный труд",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочный продукт",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочная стоимость",
+      "category": "concept"
+    },
+    {
+      "source": "потребительная стоимость",
+      "category": "concept"
+    },
+    {
+      "source": "закон стоимости",
+      "category": "concept"
+    },
+    {
+      "source": "заработная плата",
+      "category": "concept"
+    },
+    {
+      "source": "производительность труда",
+      "category": "concept"
+    },
+    {
+      "source": "необходимое общественное рабочее время",
+      "category": "concept"
+    },
+    {
+      "source": "свободное время",
+      "category": "concept"
+    },
+    {
+      "source": "трудовая армия",
+      "category": "concept"
+    },
+    {
+      "source": "коллективный капиталист",
+      "category": "concept"
+    },
+    {
+      "source": "господство капитала",
+      "category": "concept"
+    },
+    {
+      "source": "капитал как общественное отношение",
+      "category": "concept"
+    },
+    {
+      "source": "историческая роль капитала",
+      "category": "concept"
+    },
+    {
+      "source": "историческая миссия",
+      "category": "concept"
+    },
+    {
+      "source": "автоматическая фабрика",
+      "category": "concept"
+    },
+    {
+      "source": "кризис перепроизводства",
+      "category": "concept"
+    },
+    {
+      "source": "относительное обнищание",
+      "category": "concept"
+    },
+    {
+      "source": "абсолютная нищета",
+      "category": "concept"
+    },
+    {
+      "source": "в расширенном масштабе",
+      "category": "concept"
+    },
+    {
+      "source": "периферия и полупериферия",
+      "category": "concept"
+    },
+    {
+      "source": "эксплуатация человека человеком",
+      "category": "phrase"
+    },
+    {
+      "source": "денежно-товарные отношения",
+      "category": "concept"
+    },
+    {
+      "source": "товарно-денежные отношения",
+      "category": "concept"
+    },
+    {
+      "source": "прямое распределение",
+      "category": "concept"
+    },
+    {
+      "source": "натуральное хозяйство",
+      "category": "concept"
+    },
+    {
+      "source": "потребительский кооператив",
+      "category": "concept"
+    },
+    {
+      "source": "моральный и физический износ",
+      "category": "concept"
+    },
+    {
+      "source": "экономический агент",
+      "category": "concept"
+    },
+    {
+      "source": "способ общения",
+      "category": "concept"
+    },
+    {
+      "source": "материальное производство",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственное производство человека",
+      "category": "concept"
+    },
+    {
+      "source": "производство и воспроизводство непосредственной жизни",
+      "category": "quote"
+    },
+    {
+      "source": "производство средств к жизни",
+      "category": "concept"
+    },
+    {
+      "source": "продолжение рода",
+      "category": "concept"
+    },
+    {
+      "source": "воспроизводство общественной жизни",
+      "category": "concept"
+    },
+    {
+      "source": "идеальное",
+      "category": "concept",
+      "forms": [
+        "идеальное",
+        "идеального",
+        "идеальному",
+        "идеальным",
+        "идеальном"
+      ]
+    },
+    {
+      "source": "производство идеального",
+      "category": "concept"
+    },
+    {
+      "source": "сфера идеального",
+      "category": "concept"
+    },
+    {
+      "source": "надстроечная деятельность",
+      "category": "concept"
+    },
+    {
+      "source": "надстройка",
+      "category": "concept"
+    },
+    {
+      "source": "базис",
+      "category": "concept"
+    },
+    {
+      "source": "локальный коммунизм",
+      "category": "concept"
+    },
+    {
+      "source": "тотальный коммунизм",
+      "category": "concept"
+    },
+    {
+      "source": "коммунизм по нужде",
+      "category": "concept"
+    },
+    {
+      "source": "коммунизм по внутренней необходимости",
+      "category": "concept"
+    },
+    {
+      "source": "коммунизм как наука",
+      "category": "concept"
+    },
+    {
+      "source": "научный социализм",
+      "category": "concept"
+    },
+    {
+      "source": "первобытный коммунизм",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистический идеал",
+      "category": "concept"
+    },
+    {
+      "source": "общественный идеал",
+      "category": "concept"
+    },
+    {
+      "source": "строительство коммунизма",
+      "category": "concept"
+    },
+    {
+      "source": "социалистическое строительство",
+      "category": "concept"
+    },
+    {
+      "source": "стихийный",
+      "category": "concept"
+    },
+    {
+      "source": "классовая позиция",
+      "category": "concept"
+    },
+    {
+      "source": "классовая борьба",
+      "category": "concept"
+    },
+    {
+      "source": "теоретическая борьба",
+      "category": "concept"
+    },
+    {
+      "source": "классовые противоположности",
+      "category": "concept"
+    },
+    {
+      "source": "сословный принцип",
+      "category": "concept"
+    },
+    {
+      "source": "революционная теория",
+      "category": "concept"
+    },
+    {
+      "source": "государство",
+      "category": "concept"
+    },
+    {
+      "source": "отмирание государства",
+      "category": "concept"
+    },
+    {
+      "source": "самоуничтожение государства",
+      "category": "concept"
+    },
+    {
+      "source": "правовое государство",
+      "category": "concept"
+    },
+    {
+      "source": "государственная машина",
+      "category": "concept"
+    },
+    {
+      "source": "аппарат подавления",
+      "category": "concept"
+    },
+    {
+      "source": "господствующий класс",
+      "category": "concept"
+    },
+    {
+      "source": "правящий класс",
+      "category": "concept"
+    },
+    {
+      "source": "чиновник",
+      "category": "concept"
+    },
+    {
+      "source": "самоуправление",
+      "category": "concept"
+    },
+    {
+      "source": "органы общественного самоуправления",
+      "category": "concept"
+    },
+    {
+      "source": "самоорганизация",
+      "category": "concept"
+    },
+    {
+      "source": "учёт и контроль",
+      "category": "quote"
+    },
+    {
+      "source": "Вся власть советам",
+      "category": "phrase"
+    },
+    {
+      "source": "каждая кухарка должна научиться управлять государством",
+      "category": "quote"
+    },
+    {
+      "source": "кухарка",
+      "category": "concept"
+    },
+    {
+      "source": "в музей древностей, рядом с прялкой и с бронзовым топором",
+      "category": "quote"
+    },
+    {
+      "source": "взятие средств производства во владение государством от имени всего общества",
+      "category": "quote"
+    },
+    {
+      "source": "свободное развитие каждого является условием свободного развития всех",
+      "category": "quote"
+    },
+    {
+      "source": "коммунисты могут выразить свою теорию одним положением: уничтожение частной собственности",
+      "category": "quote"
+    },
+    {
+      "source": "Экспроприация земельной собственности и обращение земельной ренты на покрытие государственных расходов",
+      "category": "quote"
+    },
+    {
+      "source": "энергический принцип ближайшего будущего",
+      "category": "quote"
+    },
+    {
+      "source": "свободная игра физических и умственных сил",
+      "category": "quote"
+    },
+    {
+      "source": "царство свободы",
+      "category": "quote"
+    },
+    {
+      "source": "Мы не утописты",
+      "category": "phrase"
+    },
+    {
+      "source": "любовь – теорема, которую нужно доказывать каждый день",
+      "category": "quote"
+    },
+    {
+      "source": "Без революционной теории не может быть и революционного движения",
+      "category": "quote"
+    },
+    {
+      "source": "ум, честь и совесть нашей эпохи",
+      "category": "quote"
+    },
+    {
+      "source": "Оружие критики не может, конечно, заменить критики оружием",
+      "category": "quote"
+    },
+    {
+      "source": "материальная сила",
+      "category": "concept"
+    },
+    {
+      "source": "каждый шаг действительного движения важнее дюжины программ",
+      "category": "quote"
+    },
+    {
+      "source": "Пролетарии всех стран, соединяйтесь!",
+      "category": "phrase"
+    },
+    {
+      "source": "таскать вам не перетаскать",
+      "category": "quote"
+    },
+    {
+      "source": "теория становится материальной силой, как только она овладевает массами",
+      "category": "quote"
+    },
+    {
+      "source": "Главный недостаток всего предшествующего материализма",
+      "category": "quote"
+    },
+    {
+      "source": "пролетариат",
+      "category": "concept"
+    },
+    {
+      "source": "подвиг Фейербаха",
+      "category": "quote"
+    },
+    {
+      "source": "земная основа",
+      "category": "concept"
+    },
+    {
+      "source": "святое семейство",
+      "category": "phrase"
+    },
+    {
+      "source": "самоотчуждение",
+      "category": "concept"
+    },
+    {
+      "source": "отчуждение",
+      "category": "concept"
+    },
+    {
+      "source": "кулачное право",
+      "category": "concept"
+    },
+    {
+      "source": "право сильного",
+      "category": "concept"
+    },
+    {
+      "source": "оппортунизм",
+      "category": "concept"
+    },
+    {
+      "source": "прудонизм",
+      "category": "concept"
+    },
+    {
+      "source": "теоретический смысл",
+      "category": "concept"
+    },
+    {
+      "source": "партийность",
+      "category": "concept"
+    },
+    {
+      "source": "политическая экономия",
+      "category": "concept"
+    },
+    {
+      "source": "объективная истина",
+      "category": "concept"
+    },
+    {
+      "source": "общечеловеческий",
+      "category": "concept"
+    },
+    {
+      "source": "целеполагание",
+      "category": "concept"
+    },
+    {
+      "source": "духовная культура",
+      "category": "concept"
+    },
+    {
+      "source": "мир идей",
+      "category": "concept"
+    },
+    {
+      "source": "профессиональный кретинизм",
+      "category": "concept"
+    },
+    {
+      "source": "в конечном счёте",
+      "category": "phrase"
+    },
+    {
+      "source": "в конечном счете",
+      "category": "phrase"
+    },
+    {
+      "source": "понятие",
+      "category": "concept",
+      "forms": [
+        "понятие",
+        "понятия",
+        "понятию",
+        "понятием",
+        "понятии",
+        "понятий",
+        "понятиям",
+        "понятиями",
+        "понятиях"
+      ]
+    },
+    {
+      "source": "представление",
+      "category": "concept",
+      "forms": [
+        "представление",
+        "представления",
+        "представлению",
+        "представлением",
+        "представлении",
+        "представлений",
+        "представлениям",
+        "представлениями",
+        "представлениях"
+      ]
+    },
+    {
+      "source": "мышление",
+      "category": "concept"
+    },
+    {
+      "source": "субъект мышления",
+      "category": "concept"
+    },
+    {
+      "source": "субъект исторического действия",
+      "category": "concept"
+    },
+    {
+      "source": "культура мышления",
+      "category": "concept"
+    },
+    {
+      "source": "диалектическое мышление",
+      "category": "concept"
+    },
+    {
+      "source": "чувственность",
+      "category": "concept"
+    },
+    {
+      "source": "нравственность",
+      "category": "concept"
+    },
+    {
+      "source": "научная картина мира",
+      "category": "concept"
+    },
+    {
+      "source": "политехническое образование",
+      "category": "concept"
+    },
+    {
+      "source": "политехнизм",
+      "category": "concept"
+    },
+    {
+      "source": "планирование",
+      "category": "concept"
+    },
+    {
+      "source": "конкретно-исторический",
+      "category": "concept"
+    },
+    {
+      "source": "совместно-раздельная деятельность",
+      "category": "concept"
+    },
+    {
+      "source": "быт",
+      "category": "concept",
+      "forms": [
+        "быт",
+        "быта",
+        "быту",
+        "бытом",
+        "быте"
+      ]
+    },
+    {
+      "source": "общественное питание",
+      "category": "concept"
+    },
+    {
+      "source": "общепит",
+      "category": "concept"
+    },
+    {
+      "source": "обыватель",
+      "category": "concept"
+    },
+    {
+      "source": "мещанский",
+      "category": "concept",
+      "forms": [
+        "мещанский",
+        "мещанского",
+        "мещанско-поэтического"
+      ]
+    },
+    {
+      "source": "воспитание",
+      "category": "concept"
+    },
+    {
+      "source": "общественное воспитание",
+      "category": "concept"
+    },
+    {
+      "source": "коллектив",
+      "category": "concept"
+    },
+    {
+      "source": "первичный коллектив",
+      "category": "concept"
+    },
+    {
+      "source": "трудовой коллектив",
+      "category": "concept"
+    },
+    {
+      "source": "половая любовь",
+      "category": "concept"
+    },
+    {
+      "source": "семейные ценности",
+      "category": "concept"
+    },
+    {
+      "source": "коммуна",
+      "category": "concept"
+    },
+    {
+      "source": "свободное ПО",
+      "category": "concept"
+    },
+    {
+      "source": "программное обеспечение",
+      "category": "concept"
+    },
+    {
+      "source": "открытый код",
+      "category": "concept"
+    },
+    {
+      "source": "открытое программное обеспечение",
+      "category": "concept"
+    },
+    {
+      "source": "исходники",
+      "category": "concept"
+    },
+    {
+      "source": "база данных",
+      "category": "concept"
+    },
+    {
+      "source": "общедоступная база данных",
+      "category": "concept"
+    },
+    {
+      "source": "пространственная база данных",
+      "category": "concept"
+    },
+    {
+      "source": "информационная грамотность",
+      "category": "concept"
+    },
+    {
+      "source": "компьютерная грамотность",
+      "category": "concept"
+    },
+    {
+      "source": "общегосударственная система управления экономикой",
+      "category": "concept"
+    }
+  ]
+}

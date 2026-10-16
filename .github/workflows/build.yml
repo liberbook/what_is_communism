@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build the four editions in Docker
+      - name: Build every edition in Docker
         run: ./docker_build.sh
       - name: Keep the books
         uses: actions/upload-artifact@v4
@@ -32,14 +32,12 @@ jobs:
             out/*/print/*.pdf
             out/*/*.epub
             out/*/*.fb2
-      - name: Assemble the site (the HTML editions)
+      - name: Check the editions (structure, glossary, outputs, generated docs)
         run: |
-          mkdir -p _site/ru _site/uk _site/it _site/en
-          cp site/index.html _site/
-          cp out/russian/chto_takoe_kommunizm.html _site/ru/index.html
-          cp out/ukrainian/shcho_take_komunizm.html _site/uk/index.html
-          cp out/italiano/che_cose_il_comunismo.html _site/it/index.html
-          cp out/english/what_is_communism.html _site/en/index.html
+          docker run --rm --user "$(id -u):$(id -g)" -v "$PWD/out:/work/out" \
+            what-is-communism-build python3 tools/checks/all.py
+      - name: Assemble the site (the HTML editions, from languages.toml)
+        run: python3 tools/render_docs.py --site _site
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

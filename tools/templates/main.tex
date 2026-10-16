@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{preamble}
+\begin{document}
+\pagenumbering{gobble}
+
+% ── Page 1: full-page cover image ───────────────────────────────
+{%
+  \AddToShipoutPictureBG*{%
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{images/img-000.jpg}%
+  }%
+  \thispagestyle{empty}%
+  \null\clearpage
+}
+
+% ── Page 2: name / logo / year ──────────────────────────────────
+\thispagestyle{empty}
+\begin{center}
+\vspace*{3cm}
+\includegraphics[width=0.8\textwidth]{images/img-001.jpg}\\[2cm]
+{\Huge\bfseries @TITLE@}\\[1cm]
+{\large @AUTHOR@}\\[0.5cm]
+@CREDIT@
+{\large 2018}
+\vfill
+\end{center}
+\clearpage
+
+% ── Page 3: TOC ─────────────────────────────────────────────────
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% ── Parts ───────────────────────────────────────────────────────
+@PARTS@
+
+\end{document}

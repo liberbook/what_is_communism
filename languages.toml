@@ -1,0 +1,122 @@
+# Every edition of the booklet.
+#
+# Read by build_book.py (what to build), tools/render_docs.py (site/index.html,
+# the README edition tables, the GitHub Pages site), tools/new_language.py
+# (appends new editions), the translation pipeline in tools/translate/ and the
+# checks in tools/checks/. After editing, run:  python3 tools/render_docs.py
+#
+# Fields
+#   code, dir, lang      short code, source directory, BCP 47 language tag
+#   name, label          language name; label shown on the landing-page card
+#   english_name         language name in English (README lists)
+#   title, author        book title and author line in that language
+#   basename             base file name of every output (PDF, EPUB, ...)
+#   read_online, download, files.{pdf,print,booklet}   landing-page labels
+#   source = true        the original (exactly one edition)
+#   Translated editions also have:
+#   target_language      language name given to the translator ("English")
+#   glossary             glossary file produced by tools/glossary/build.py
+#   parts                the 11 part file names, in book order
+#   [typography]         quotes / inner_quotes pairs, dash, range_dash,
+#                        spaced_dash (true: " – ", false: "—")
+#   [prompt]             language-specific rules for the review pass
+
+repo = "liberbook/what_is_communism"
+site = "https://liberbook.github.io/what_is_communism/"
+
+[[edition]]
+code = "ru"
+english_name = "Russian"
+dir = "russian"
+lang = "ru"
+name = "Русский"
+label = "Русский · оригинал"
+title = "Что такое коммунизм?"
+author = "Группа Энгельс"
+basename = "chto_takoe_kommunizm"
+read_online = "Читать онлайн"
+download = "Скачать"
+files = { pdf = "PDF", print = "PDF A5 для печати", booklet = "брошюра A4" }
+source = true
+parts = ["01_izobretaem_ochki", "02_predislovie", "03_osnovanie", "04_kommunizm_realnost",
+         "05_obshhaya_sobstvennost", "06_necessitatem_truda", "07_kommunizm_upravlenie",
+         "08_kommunizm_lichnost", "09_kommunizm_semya", "10_kommunizm_soznanie", "11_zaklyuchenie"]
+
+[[edition]]
+code = "uk"
+english_name = "Ukrainian"
+dir = "ukrainian"
+lang = "uk"
+name = "Українська"
+label = "Українська"
+title = "Що таке комунізм?"
+author = "Група Енгельс"
+basename = "shcho_take_komunizm"
+read_online = "Читати онлайн"
+download = "Завантажити"
+files = { pdf = "PDF", print = "PDF A5 для друку", booklet = "брошура A4" }
+parts = ["01_izobretaem_ochki", "02_predislovie", "03_osnovanie", "04_kommunizm_realnost",
+         "05_obshhaya_sobstvennost", "06_necessitatem_truda", "07_kommunizm_upravlenie",
+         "08_kommunizm_lichnost", "09_kommunizm_semya", "10_kommunizm_soznanie", "11_zaklyuchenie"]
+
+[[edition]]
+code = "it"
+english_name = "Italian"
+dir = "italiano"
+lang = "it"
+name = "Italiano"
+label = "Italiano"
+title = "Che cos'è il comunismo?"
+author = "Gruppo Engels"
+basename = "che_cose_il_comunismo"
+read_online = "Leggi online"
+download = "Scarica"
+files = { pdf = "PDF", print = "PDF A5 da stampare", booklet = "opuscolo A4" }
+target_language = "Italian"
+glossary = "italiano/glossary.ru-it.json"
+parts = ["01_inventiamo_occhiali", "02_prefazione", "03_fondamenti", "04_comunismo_realta",
+         "05_proprieta_comune", "06_opera_necessaria", "07_comunismo_gestione",
+         "08_comunismo_individuo", "09_comunismo_famiglia", "10_comunismo_coscienza", "11_conclusione"]
+[edition.typography]
+quotes = ["«", "»"]
+inner_quotes = ["“", "”"]
+dash = "–"
+spaced_dash = true
+range_dash = "–"
+[edition.prompt]
+distinct = "e.g. proprietà privata / proprietà personale / proprietà comune / proprietà sociale; abolizione / soppressione / superamento"
+canon = "standard Italian editions"
+numbers = "Italian number formatting (2.250.000; 6,5 milioni). Roman numerals for centuries in Latin letters (XX secolo)."
+coinage = "«occhiali-bicicletta»"
+typography = "Italian typography: «» for quotations and scare quotes (never << >> and never straight \"), a spaced en dash – for parenthetical dashes, no space before : ; ? !, apostrophes as in dell'uomo."
+
+[[edition]]
+code = "en"
+english_name = "English"
+dir = "english"
+lang = "en"
+name = "English"
+label = "English"
+title = "What Is Communism?"
+author = "Engels Group"
+basename = "what_is_communism"
+read_online = "Read online"
+download = "Download"
+files = { pdf = "PDF", print = "PDF A5 for print", booklet = "A4 booklet" }
+target_language = "English"
+glossary = "english/glossary.ru-en.json"
+parts = ["01_inventing_spectacles", "02_preface", "03_foundation", "04_communism_reality",
+         "05_common_property", "06_necessary_labour", "07_communism_management",
+         "08_communism_personality", "09_communism_family", "10_communism_consciousness", "11_conclusion"]
+[edition.typography]
+quotes = ["“", "”"]
+inner_quotes = ["‘", "’"]
+dash = "—"
+spaced_dash = false
+range_dash = "–"
+[edition.prompt]
+distinct = "e.g. private property / personal property / common property / social property; abolition / transcendence / sublation; appropriation / assimilation"
+canon = "as in the English editions of Progress Publishers and the Marx-Engels Collected Works"
+numbers = "English number formatting (2,250,000; 6.5 million). Roman numerals for centuries in Latin letters, or the century written out (the 20th century)."
+coinage = "“bicycle spectacles”"
+typography = "English typography and spelling: British spelling throughout, consistent with the glossary (labour, socialisation, organisation); curly double quotes “ ” for quotations and scare quotes, curly single quotes ‘ ’ for quotations inside quotations (never « », never << >>, never straight \"); an unspaced em dash — for parenthetical dashes; an en dash for number ranges (1933–1937); typographic apostrophes are fine."

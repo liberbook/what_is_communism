@@ -8,42 +8,29 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT_ROOT = ROOT / "out"
 MARKDOWN_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}
 
-CONFIGS = {
-    "russian": {
-        "src": ROOT / "russian",
-        "title": "Что такое коммунизм?",
-        "author": "Группа Энгельс",
-        "lang": "ru",
-        "basename": "chto_takoe_kommunizm",
-    },
-    "ukrainian": {
-        "src": ROOT / "ukrainian",
-        "title": "Що таке комунізм?",
-        "author": "Група Енгельс",
-        "lang": "uk",
-        "basename": "shcho_take_komunizm",
-    },
-    "italiano": {
-        "src": ROOT / "italiano",
-        "title": "Che cos'è il comunismo?",
-        "author": "Gruppo Engels",
-        "lang": "it",
-        "basename": "che_cose_il_comunismo",
-    },
-    "english": {
-        "src": ROOT / "english",
-        "title": "What Is Communism?",
-        "author": "Engels Group",
-        "lang": "en",
-        "basename": "what_is_communism",
-    },
-}
+def load_configs() -> dict[str, dict[str, object]]:
+    """Editions to build, from languages.toml (keyed by source directory name)."""
+    data = tomllib.loads((ROOT / "languages.toml").read_text(encoding="utf-8"))
+    return {
+        e["dir"]: {
+            "src": ROOT / e["dir"],
+            "title": e["title"],
+            "author": e["author"],
+            "lang": e["lang"],
+            "basename": e["basename"],
+        }
+        for e in data["edition"]
+    }
+
+
+CONFIGS = load_configs()
 
 PRINT_PREAMBLE_PATCH = r"""
 % ─── Print version: A5 page size, balanced margins ───────────────────────────

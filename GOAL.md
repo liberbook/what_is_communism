@@ -142,6 +142,26 @@ In short, the proposed pipeline is:
 
 This method makes the translation process more reliable, more scalable, and easier to reproduce for many languages.
 
+
+### Automated workflow in this repository
+
+Steps 4–8 are scripted in [`tools/`](tools/README.md); the language-specific settings of every edition live in [`languages.toml`](languages.toml). The model is used only to draft the glossary, to translate and to review; every check is deterministic.
+
+1. **Create the edition** with `tools/new_language.py`, then set the typography and review rules of the language in `languages.toml`.
+2. **Prepare the glossary.** `tools/glossary/draft.py` drafts the targets of all terms in `glossary/terms.json`; a person reviews `glossary/targets.<code>.json`, resolves every `CHECK:` note and sets `"status": "reviewed"`. The builder refuses a draft.
+3. **Translate.** `tools/translate/run.py` runs the translation pass (TranslateBooksWithLLMs with the glossary), the bilingual review pass against the Russian source, the structural and glossary checks, the typography, and writes an HTML report (Russian, published version, new version, changes highlighted, doubtful paragraphs flagged). Each run is kept in `work/<code>/<run>/`, so a retranslation with a new model never overwrites the edition.
+4. **Read the report**, then run the same command with `--promote`: the parts are written, the edition is built and all checks run again.
+5. **CI** builds every edition on each push and runs `tools/checks/all.py` (structure, glossary usage, outputs and language metadata, generated documents).
+
+```bash
+python3 tools/new_language.py de --dir german --name Deutsch --english-name German \
+    --title "Was ist Kommunismus?" --author "Gruppe Engels" --basename was_ist_kommunismus --babel ngerman
+python3 tools/glossary/draft.py de                    # glossary draft -> glossary/targets.de.json
+python3 tools/translate/run.py de                     # translate, review, check, report (work/de/<run>/)
+python3 tools/translate/run.py de --run <run> --promote   # into german/parts, build, verify
+python3 tools/checks/all.py                           # every check, as in CI
+```
+
 ---
 
 ## Русский
@@ -280,6 +300,26 @@ AI-агент должен сравнить восстановленные фа�
 
 Такой подход делает процесс перевода более надёжным, масштабируемым и воспроизводимым для многих языков.
 
+
+### Автоматизированный процесс в этом репозитории
+
+Шаги 4–8 выполняются скриптами из [`tools/`](tools/README.md); настройки каждого издания, зависящие от языка, лежат в [`languages.toml`](languages.toml). Модель нужна только для черновика словаря, перевода и сверки; все проверки детерминированные и работают без AI.
+
+1. **Создать издание** командой `tools/new_language.py`, затем задать в `languages.toml` типографику и правила сверки для языка.
+2. **Подготовить словарь.** `tools/glossary/draft.py` составляет черновик переводов всех терминов из `glossary/terms.json`; человек проверяет `glossary/targets.<код>.json`, разбирает каждую пометку `CHECK:` и ставит `"status": "reviewed"`. Черновик сборка словаря не принимает.
+3. **Перевести.** `tools/translate/run.py` выполняет перевод (TranslateBooksWithLLMs со словарём), сверку с русским оригиналом, проверки структуры и словаря, типографику и создаёт HTML-отчёт (русский текст, опубликованная версия, новая версия, изменения подсвечены, сомнительные абзацы отмечены). Каждый прогон хранится в `work/<код>/<прогон>/`, поэтому новый перевод новой моделью не затирает издание.
+4. **Прочитать отчёт** и выполнить ту же команду с `--promote`: части записываются в издание, оно собирается, все проверки запускаются ещё раз.
+5. **CI** при каждом push собирает все издания и запускает `tools/checks/all.py` (структура, использование словаря, файлы и язык в метаданных, сгенерированные документы).
+
+```bash
+python3 tools/new_language.py de --dir german --name Deutsch --english-name German \
+    --title "Was ist Kommunismus?" --author "Gruppe Engels" --basename was_ist_kommunismus --babel ngerman
+python3 tools/glossary/draft.py de                    # glossary draft -> glossary/targets.de.json
+python3 tools/translate/run.py de                     # translate, review, check, report (work/de/<run>/)
+python3 tools/translate/run.py de --run <run> --promote   # into german/parts, build, verify
+python3 tools/checks/all.py                           # every check, as in CI
+```
+
 ---
 
 ## Italiano
@@ -417,3 +457,22 @@ In breve, la pipeline proposta è:
 8. Generazione di PDF, EPUB e altri formati tradotti
 
 Questo metodo rende il processo di traduzione più affidabile, più scalabile e più facile da riprodurre in molte lingue.
+
+### Flusso di lavoro automatizzato in questo repository
+
+I passi 4–8 sono eseguiti dagli script in [`tools/`](tools/README.md); le impostazioni di ogni edizione che dipendono dalla lingua sono in [`languages.toml`](languages.toml). Il modello serve solo per la bozza del glossario, la traduzione e la revisione; tutti i controlli sono deterministici e non usano l'AI.
+
+1. **Creare l'edizione** con `tools/new_language.py`, poi impostare in `languages.toml` la tipografia e le regole di revisione della lingua.
+2. **Preparare il glossario.** `tools/glossary/draft.py` prepara la bozza dei traducenti di tutti i termini di `glossary/terms.json`; una persona controlla `glossary/targets.<codice>.json`, risolve ogni nota `CHECK:` e imposta `"status": "reviewed"`. Il costruttore rifiuta una bozza.
+3. **Tradurre.** `tools/translate/run.py` esegue la traduzione (TranslateBooksWithLLMs con il glossario), la revisione bilingue sul testo russo, i controlli di struttura e di glossario, la tipografia, e scrive un rapporto HTML (testo russo, versione pubblicata, nuova versione, modifiche evidenziate, paragrafi dubbi segnalati). Ogni esecuzione resta in `work/<codice>/<esecuzione>/`, quindi una nuova traduzione con un nuovo modello non sovrascrive l'edizione.
+4. **Leggere il rapporto**, poi eseguire lo stesso comando con `--promote`: le parti vengono scritte, l'edizione viene compilata e tutti i controlli ripartono.
+5. **La CI** compila tutte le edizioni a ogni push ed esegue `tools/checks/all.py` (struttura, uso del glossario, file e lingua nei metadati, documenti generati).
+
+```bash
+python3 tools/new_language.py de --dir german --name Deutsch --english-name German \
+    --title "Was ist Kommunismus?" --author "Gruppe Engels" --basename was_ist_kommunismus --babel ngerman
+python3 tools/glossary/draft.py de                    # glossary draft -> glossary/targets.de.json
+python3 tools/translate/run.py de                     # translate, review, check, report (work/de/<run>/)
+python3 tools/translate/run.py de --run <run> --promote   # into german/parts, build, verify
+python3 tools/checks/all.py                           # every check, as in CI
+```

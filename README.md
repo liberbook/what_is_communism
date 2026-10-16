@@ -1,4 +1,4 @@
-# What is communism? / Что такое коммунизм? / Che cos'è il comunismo?
+# What is communism? / Что такое коммунизм? / Що таке комунізм? / Che cos'è il comunismo?
 
 [![Read online](https://img.shields.io/badge/read-online-b0301e)](https://liberbook.github.io/what_is_communism/)
 [![Release](https://img.shields.io/github/v/release/liberbook/what_is_communism?label=release)](https://github.com/liberbook/what_is_communism/releases/latest)
@@ -8,11 +8,12 @@
 ![Formats](https://img.shields.io/badge/formats-PDF%20%C2%B7%20EPUB%20%C2%B7%20FB2-555)
 ![Made with LaTeX](https://img.shields.io/badge/made%20with-LaTeX-008080?logo=latex&logoColor=white)
 
-## Читать онлайн · Читати онлайн · Leggi online
+<!-- editions:downloads:begin -->
+## Читать онлайн · Читати онлайн · Leggi online · Read online
 
 [Русский](https://liberbook.github.io/what_is_communism/ru/) · [Українська](https://liberbook.github.io/what_is_communism/uk/) · [Italiano](https://liberbook.github.io/what_is_communism/it/) · [English](https://liberbook.github.io/what_is_communism/en/) — или главная страница: [liberbook.github.io/what_is_communism/](https://liberbook.github.io/what_is_communism/)
 
-## Скачать · Завантажити · Scarica
+## Скачать · Завантажити · Scarica · Download
 
 | | Читать с экрана (A4) | Печать (A5) | Брошюра на A4 (двусторонняя печать) | EPUB | FB2 |
 |---|---|---|---|---|---|
@@ -22,22 +23,27 @@
 | **English** — What Is Communism? | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism_print.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism_booklet_a4.pdf) | [EPUB](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.epub) | [FB2](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.fb2) |
 
 Все версии — в [релизах](https://github.com/liberbook/what_is_communism/releases). Every version: [Releases](https://github.com/liberbook/what_is_communism/releases).
+<!-- editions:downloads:end -->
 
 ## About · О проекте
 
 See [GOAL.md](GOAL.md) for the project's goals and the recommended AI-driven translation workflow — it explains the conversion, verification, and translation steps used throughout this repository.
+<!-- editions:results:begin -->
 The same files are also in [`results/`](results/) (Markdown and HTML versions too, readable right on GitHub: [RU](results/russian/chto_takoe_kommunizm.md) · [UK](results/ukrainian/shcho_take_komunizm.md) · [IT](results/italiano/che_cose_il_comunismo.md) · [EN](results/english/what_is_communism.md)).
+<!-- editions:results:end -->
 
+<!-- editions:list:begin -->
 This repository contains four compact LaTeX editions of the same political-theoretical booklet:
 
 - `russian/` — Russian edition (the original, by «Группа Энгельс»): **Что такое коммунизм?**
 - `ukrainian/` — Ukrainian edition: **Що таке комунізм?**
 - `italiano/` — Italian edition: **Che cos'è il comunismo?**
 - `english/` — English edition: **What Is Communism?**
+<!-- editions:list:end -->
 
-The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (409 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`. Rebuild it with `python3 build_glossary.py` after editing the term list in that script.
+The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (409 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`. Its data is in [`glossary/`](glossary/): `terms.json` (Russian sources) and `targets.it.json`; rebuild it with `python3 tools/glossary/build.py it`.
 
-The English edition is a translation from Russian made the same way, with Claude Opus 5.5 through TranslateBooksWithLLMs (translation pass with a glossary, then a bilingual review pass against the Russian source). Its glossary (409 terms; titles, formulas and terms as in the English editions of Progress Publishers and the Marx-Engels Collected Works, British spelling) is in [`english/glossary.ru-en.json`](english/glossary.ru-en.json); rebuild it with `python3 build_glossary.py --lang en`.
+The English edition is a translation from Russian made the same way, with Claude Opus 5.5 through TranslateBooksWithLLMs (translation pass with a glossary, then a bilingual review pass against the Russian source). Its glossary (409 terms; titles, formulas and terms as in the English editions of Progress Publishers and the Marx-Engels Collected Works, British spelling) is in [`english/glossary.ru-en.json`](english/glossary.ru-en.json); its targets are in `glossary/targets.en.json`, rebuild it with `python3 tools/glossary/build.py en`.
 
 ### По-русски
 
@@ -49,6 +55,15 @@ Questo testo presenta il comunismo non come mito, insulto o slogan nostalgico, m
 
 La versione italiana inclusa in questo repository è stata tradotta dal russo con Claude Opus 5.5 tramite TranslateBooksWithLLMs: una traduzione guidata da un glossario, seguita da una revisione bilingue sul testo russo.
 
+## Adding a language or retranslating
+
+The whole process is scripted and every check runs without AI; see
+[`tools/README.md`](tools/README.md). In short: `tools/new_language.py` creates
+the edition, `tools/glossary/draft.py` drafts its glossary for you to review,
+`tools/translate/run.py` translates, reviews, checks and writes an HTML report,
+and `--promote` puts the result into the edition and rebuilds it. CI runs
+`tools/checks/all.py` on every push.
+
 ## Repository layout
 
 ```text
@@ -59,7 +74,9 @@ italiano/   # self-contained LaTeX source for the Italian edition
 english/    # self-contained LaTeX source for the English edition
             #   (english/glossary.ru-en.json: ru -> en translation glossary)
 build.sh    # builds PDF + print PDF + EPUB + FB2 + HTML + Markdown
-build_glossary.py  # rebuilds the glossaries (--lang it | en) from its term lists and the Russian text
+languages.toml     # every edition: names, titles, file names, typography, review rules
+glossary/          # glossary data: terms.json (Russian sources), targets.<code>.json
+tools/             # edition, glossary, translation, check and report tools (see tools/README.md)
 Dockerfile  # minimal containerized build environment
 ```
 
