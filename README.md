@@ -4,13 +4,13 @@
 [![Release](https://img.shields.io/github/v/release/liberbook/what_is_communism?label=release)](https://github.com/liberbook/what_is_communism/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/liberbook/what_is_communism/total?label=downloads)](https://github.com/liberbook/what_is_communism/releases)
 [![Build](https://github.com/liberbook/what_is_communism/actions/workflows/build.yml/badge.svg)](https://github.com/liberbook/what_is_communism/actions/workflows/build.yml)
-![Languages](https://img.shields.io/badge/languages-ru%20%C2%B7%20uk%20%C2%B7%20it-c0392b)
+![Languages](https://img.shields.io/badge/languages-ru%20%C2%B7%20uk%20%C2%B7%20it%20%C2%B7%20en-c0392b)
 ![Formats](https://img.shields.io/badge/formats-PDF%20%C2%B7%20EPUB%20%C2%B7%20FB2-555)
 ![Made with LaTeX](https://img.shields.io/badge/made%20with-LaTeX-008080?logo=latex&logoColor=white)
 
 ## Читать онлайн · Читати онлайн · Leggi online
 
-[Русский](https://liberbook.github.io/what_is_communism/ru/) · [Українська](https://liberbook.github.io/what_is_communism/uk/) · [Italiano](https://liberbook.github.io/what_is_communism/it/) — или главная страница: [liberbook.github.io/what_is_communism/](https://liberbook.github.io/what_is_communism/)
+[Русский](https://liberbook.github.io/what_is_communism/ru/) · [Українська](https://liberbook.github.io/what_is_communism/uk/) · [Italiano](https://liberbook.github.io/what_is_communism/it/) · [English](https://liberbook.github.io/what_is_communism/en/) — или главная страница: [liberbook.github.io/what_is_communism/](https://liberbook.github.io/what_is_communism/)
 
 ## Скачать · Завантажити · Scarica
 
@@ -19,21 +19,25 @@
 | **Русский** — Что такое коммунизм? | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/chto_takoe_kommunizm.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/chto_takoe_kommunizm_print.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/chto_takoe_kommunizm_booklet_a4.pdf) | [EPUB](https://github.com/liberbook/what_is_communism/releases/latest/download/chto_takoe_kommunizm.epub) | [FB2](https://github.com/liberbook/what_is_communism/releases/latest/download/chto_takoe_kommunizm.fb2) |
 | **Українська** — Що таке комунізм? | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/shcho_take_komunizm.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/shcho_take_komunizm_print.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/shcho_take_komunizm_booklet_a4.pdf) | [EPUB](https://github.com/liberbook/what_is_communism/releases/latest/download/shcho_take_komunizm.epub) | [FB2](https://github.com/liberbook/what_is_communism/releases/latest/download/shcho_take_komunizm.fb2) |
 | **Italiano** — Che cos'è il comunismo? | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/che_cose_il_comunismo.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/che_cose_il_comunismo_print.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/che_cose_il_comunismo_booklet_a4.pdf) | [EPUB](https://github.com/liberbook/what_is_communism/releases/latest/download/che_cose_il_comunismo.epub) | [FB2](https://github.com/liberbook/what_is_communism/releases/latest/download/che_cose_il_comunismo.fb2) |
+| **English** — What Is Communism? | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism_print.pdf) | [PDF](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism_booklet_a4.pdf) | [EPUB](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.epub) | [FB2](https://github.com/liberbook/what_is_communism/releases/latest/download/what_is_communism.fb2) |
 
 Все версии — в [релизах](https://github.com/liberbook/what_is_communism/releases). Every version: [Releases](https://github.com/liberbook/what_is_communism/releases).
 
 ## About · О проекте
 
 See [GOAL.md](GOAL.md) for the project's goals and the recommended AI-driven translation workflow — it explains the conversion, verification, and translation steps used throughout this repository.
-The same files are also in [`results/`](results/) (Markdown and HTML versions too, readable right on GitHub: [RU](results/russian/chto_takoe_kommunizm.md) · [UK](results/ukrainian/shcho_take_komunizm.md) · [IT](results/italiano/che_cose_il_comunismo.md)).
+The same files are also in [`results/`](results/) (Markdown and HTML versions too, readable right on GitHub: [RU](results/russian/chto_takoe_kommunizm.md) · [UK](results/ukrainian/shcho_take_komunizm.md) · [IT](results/italiano/che_cose_il_comunismo.md) · [EN](results/english/what_is_communism.md)).
 
-This repository contains three compact LaTeX editions of the same political-theoretical booklet:
+This repository contains four compact LaTeX editions of the same political-theoretical booklet:
 
 - `russian/` — Russian edition (the original, by «Группа Энгельс»): **Что такое коммунизм?**
 - `ukrainian/` — Ukrainian edition: **Що таке комунізм?**
 - `italiano/` — Italian edition: **Che cos'è il comunismo?**
+- `english/` — English edition: **What Is Communism?**
 
-The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (407 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`. Rebuild it with `python3 build_glossary.py` after editing the term list in that script.
+The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (409 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`. Rebuild it with `python3 build_glossary.py` after editing the term list in that script.
+
+The English edition is a translation from Russian made the same way, with Claude Opus 5.5 through TranslateBooksWithLLMs (translation pass with a glossary, then a bilingual review pass against the Russian source). Its glossary (409 terms; titles, formulas and terms as in the English editions of Progress Publishers and the Marx-Engels Collected Works, British spelling) is in [`english/glossary.ru-en.json`](english/glossary.ru-en.json); rebuild it with `python3 build_glossary.py --lang en`.
 
 ### По-русски
 
@@ -52,8 +56,10 @@ russian/    # self-contained LaTeX source for the Russian edition
 ukrainian/  # self-contained LaTeX source for the Ukrainian edition
 italiano/   # self-contained LaTeX source for the Italian edition
             #   (italiano/glossary.ru-it.json: ru -> it translation glossary)
+english/    # self-contained LaTeX source for the English edition
+            #   (english/glossary.ru-en.json: ru -> en translation glossary)
 build.sh    # builds PDF + print PDF + EPUB + FB2 + HTML + Markdown
-build_glossary.py  # rebuilds italiano/glossary.ru-it.json from its term list and the Russian text
+build_glossary.py  # rebuilds the glossaries (--lang it | en) from its term lists and the Russian text
 Dockerfile  # minimal containerized build environment
 ```
 
@@ -86,9 +92,10 @@ Build one edition only:
 ./build.sh russian
 ./build.sh ukrainian
 ./build.sh italiano
+./build.sh english
 ```
 
-Generated files are written to `out/russian/`, `out/ukrainian/`, and `out/italiano/`.
+Generated files are written to `out/russian/`, `out/ukrainian/`, `out/italiano/`, and `out/english/`.
 
 Each edition produces:
 

@@ -4,3 +4,4 @@ tmp/
 *.aux
 *.out
 *.toc
+__pycache__/

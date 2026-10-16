@@ -1,6 +1,6 @@
 {
   "name": "What is communism (ru -> it)",
-  "_about": "Glossary for the whole booklet, built by build_glossary.py: the chapter-03 glossary plus terms harvested from every chapter (names in the scientific transliteration used by Italian Wikipedia, established Italian titles, short canonical formulas of Marx, Engels and Lenin, the author's coinages, and the Marxist lexicon). Each source lists the inflected forms found in the Russian text, separated by '|', so TranslateBooksWithLLMs' per-chunk filter matches them. Use with: python translate.py ... --glossary glossary.ru-it.json",
+  "_about": "Glossary for the whole booklet, built by build_glossary.py: names in the scientific transliteration used by Italian Wikipedia, established Italian titles, short canonical formulas of Marx, Engels and Lenin, the author's coinages, and the Marxist lexicon. Each source lists the inflected forms found in the Russian text, separated by '|', so TranslateBooksWithLLMs' per-chunk filter matches them. Use with: python translate.py ... --glossary italiano/glossary.ru-it.json",
   "terms": [
     {
       "source": "Что такое коммунизм?|Что такое коммунизм",
@@ -164,6 +164,16 @@
       "_note": "Viktor Michajlovič Gluškov, OGAS project"
     },
     {
+      "source": "Виктор Михайлович Глушков",
+      "target": "Viktor Michajlovič Gluškov",
+      "category": "person"
+    },
+    {
+      "source": "В. М. Глушков|В. М. Глушкова",
+      "target": "V. M. Gluškov",
+      "category": "person"
+    },
+    {
       "source": "Макаренко",
       "target": "Makarenko",
       "category": "person",
@@ -242,7 +252,7 @@
       "_note": "everyman name, keep transliterated"
     },
     {
-      "source": "Тот самый Мюнхгаузен",
+      "source": "Тот самый Мюнхгаузен|того самого Мюнхгаузена",
       "target": "Quel Münchhausen",
       "category": "title",
       "_note": "1979 TV film"
@@ -260,7 +270,7 @@
       "_note": "Michalkov's film"
     },
     {
-      "source": "Критика Готской программы",
+      "source": "Критика Готской программы|Критикуя Готскую программу",
       "target": "Critica del programma di Gotha",
       "category": "title"
     },
@@ -310,7 +320,7 @@
       "_note": "short form"
     },
     {
-      "source": "Экономические рукописи 1857–1859 годов",
+      "source": "Экономические рукописи 1857–1859 годов|Экономических рукописей 1857–1859",
       "target": "Manoscritti economici del 1857-1859",
       "category": "title",
       "_note": "the Grundrisse"
@@ -471,7 +481,7 @@
       "_note": "feminine"
     },
     {
-      "source": "Государственный комитет статистики",
+      "source": "Государственный комитет статистики|Государственного комитета статистики",
       "target": "Comitato statale di statistica",
       "category": "organization"
     },
@@ -558,7 +568,7 @@
       "category": "place"
     },
     {
-      "source": "Нагорный Карабах",
+      "source": "Нагорный Карабах|Нагорном Карабахе",
       "target": "Nagorno Karabakh",
       "category": "place"
     },
@@ -578,7 +588,7 @@
       "category": "place"
     },
     {
-      "source": "Московско-Казанская железная дорога",
+      "source": "Московско-Казанская железная дорога|Московско-Казанской железной дороги",
       "target": "ferrovia Mosca-Kazan'",
       "category": "place"
     },
@@ -604,7 +614,7 @@
       "category": "event"
     },
     {
-      "source": "июльские события 1917 года",
+      "source": "июльские события 1917 года|июльских событий",
       "target": "giornate di luglio del 1917",
       "category": "event"
     },
@@ -621,7 +631,7 @@
       "_note": "capitalized as the name of the hypothesis"
     },
     {
-      "source": "военный коммунизм",
+      "source": "военный коммунизм|военного коммунизма",
       "target": "comunismo di guerra",
       "category": "event"
     },
@@ -684,7 +694,7 @@
       "_note": "Soviet municipal service"
     },
     {
-      "source": "коммуна-общежитие",
+      "source": "коммуна-общежитие|коммун-общежитий",
       "target": "casa-comune",
       "category": "concept",
       "_note": "1920s house-communes"
@@ -722,7 +732,7 @@
       "category": "concept"
     },
     {
-      "source": "непосредственно-общественный",
+      "source": "непосредственно-общественный|непосредственно-общественное|непосредственно-общественным",
       "target": "immediatamente sociale",
       "category": "concept"
     },
@@ -776,7 +786,7 @@
       "category": "concept"
     },
     {
-      "source": "товаровладелец",
+      "source": "товаровладелец|товаровладельцы|товаровладельцев|товаровладельца",
       "target": "possessore di merci",
       "category": "concept"
     },
@@ -792,7 +802,7 @@
       "_note": "вещный = cosale (sachlich), not reificato"
     },
     {
-      "source": "вещный характер труда",
+      "source": "вещный характер труда|вещного характера труда",
       "target": "carattere cosale del lavoro",
       "category": "concept"
     },
@@ -822,7 +832,7 @@
       "category": "concept"
     },
     {
-      "source": "общественные отношения|общественных отношений|общественное отношение|общественного отношения|Общественные отношения",
+      "source": "общественные отношения|общественным отношением|общественных отношений|общественное отношение|общественного отношения|Общественные отношения",
       "target": "rapporti sociali",
       "category": "concept"
     },
@@ -858,7 +868,7 @@
       "category": "concept"
     },
     {
-      "source": "общественный строй",
+      "source": "общественный строй|общественному строю",
       "target": "regime sociale",
       "category": "concept"
     },
@@ -904,7 +914,7 @@
       "category": "concept"
     },
     {
-      "source": "материалистическое понимание истории",
+      "source": "материалистическое понимание истории|материалистическим пониманием истории",
       "target": "concezione materialistica della storia",
       "category": "concept"
     },
@@ -914,13 +924,8 @@
       "category": "concept"
     },
     {
-      "source": "универсальное отношение",
+      "source": "универсальное отношение|универсальным отношением",
       "target": "rapporto universale",
-      "category": "concept"
-    },
-    {
-      "source": "самоценная деятельность",
-      "target": "attività che ha valore in sé",
       "category": "concept"
     },
     {
@@ -989,7 +994,7 @@
       "_note": "Selbstverwertung des Werts"
     },
     {
-      "source": "освоение|освоения",
+      "source": "освоение|освоения|освоением",
       "target": "appropriazione",
       "category": "concept",
       "_note": "appropriazione (della cultura, del mondo)"
@@ -1001,12 +1006,12 @@
       "_note": "Aneignung"
     },
     {
-      "source": "частный характер присвоения",
+      "source": "частный характер присвоения|частного характера присвоения|частном характере присвоения|частным характером присвоения",
       "target": "carattere privato dell'appropriazione",
       "category": "concept"
     },
     {
-      "source": "общественный характер присвоения",
+      "source": "общественный характер присвоения|общественном характере присвоения",
       "target": "carattere sociale dell'appropriazione",
       "category": "concept"
     },
@@ -1036,7 +1041,7 @@
       "category": "concept"
     },
     {
-      "source": "материалистические друзья гегелевской диалектики",
+      "source": "материалистические друзья гегелевской диалектики|материалистических друзей гегелевской диалектики",
       "target": "amici materialisti della dialettica hegeliana",
       "category": "quote",
       "_note": "Lenin"
@@ -1115,7 +1120,7 @@
       "category": "concept"
     },
     {
-      "source": "переходный период",
+      "source": "переходный период|переходного периода",
       "target": "periodo di transizione",
       "category": "concept"
     },
@@ -1169,17 +1174,17 @@
       "category": "concept"
     },
     {
-      "source": "всестороннее развитие",
+      "source": "всестороннее развитие|всесторонним развитием",
       "target": "sviluppo onnilaterale",
       "category": "concept"
     },
     {
-      "source": "универсально-развитая личность",
+      "source": "универсально-развитая личность|универсально-развитых личностей",
       "target": "personalità universalmente sviluppata",
       "category": "concept"
     },
     {
-      "source": "универсальный творец",
+      "source": "универсальный творец|универсальным творцом|универсального творца",
       "target": "creatore universale",
       "category": "concept"
     },
@@ -1190,7 +1195,7 @@
       "_note": "never persona"
     },
     {
-      "source": "личность-творец",
+      "source": "личность-творец|личностей-творцов|личности-творцы",
       "target": "personalità creatrice",
       "category": "concept"
     },
@@ -1217,7 +1222,7 @@
       "_note": "Hegelian Werden"
     },
     {
-      "source": "становящийся человек",
+      "source": "становящийся человек|становящегося человека",
       "target": "uomo in divenire",
       "category": "concept"
     },
@@ -1227,17 +1232,17 @@
       "category": "concept"
     },
     {
-      "source": "целостный человек",
+      "source": "целостный человек|целостного человека",
       "target": "uomo integrale",
       "category": "concept"
     },
     {
-      "source": "общественный человек",
+      "source": "общественный человек|общественного человека",
       "target": "uomo sociale",
       "category": "concept"
     },
     {
-      "source": "новый человек",
+      "source": "новый человек|нового человека",
       "target": "uomo nuovo",
       "category": "concept"
     },
@@ -1283,7 +1288,7 @@
       "category": "concept"
     },
     {
-      "source": "частный собственник",
+      "source": "частный собственник|частным собственником",
       "target": "proprietario privato",
       "category": "concept"
     },
@@ -1294,7 +1299,7 @@
       "_note": "Manoscritti 1844"
     },
     {
-      "source": "грубый коммунизм|Грубый коммунизм",
+      "source": "грубый коммунизм|грубого коммунизма|Грубый коммунизм",
       "target": "comunismo rozzo",
       "category": "concept",
       "_note": "Manoscritti 1844"
@@ -1343,32 +1348,27 @@
       "_note": "hyphenated"
     },
     {
-      "source": "купля-продажа рабочей силы",
+      "source": "купля-продажа рабочей силы|купли-продажи рабочей силы",
       "target": "compravendita della forza-lavoro",
       "category": "concept"
     },
     {
-      "source": "наёмный труд",
+      "source": "наёмный труд|наёмного труда|наёмном труде",
       "target": "lavoro salariato",
       "category": "concept"
     },
     {
-      "source": "живой труд",
-      "target": "lavoro vivo",
-      "category": "concept"
-    },
-    {
-      "source": "необходимый труд|Необходимый труд",
+      "source": "необходимый труд|Необходимый труд|необходимым трудом|необходимом труде",
       "target": "lavoro necessario",
       "category": "concept"
     },
     {
-      "source": "прибавочный труд",
+      "source": "прибавочный труд|прибавочного труда",
       "target": "pluslavoro",
       "category": "concept"
     },
     {
-      "source": "прибавочный продукт",
+      "source": "прибавочный продукт|прибавочного продукта",
       "target": "plusprodotto",
       "category": "concept"
     },
@@ -1408,12 +1408,6 @@
       "category": "concept"
     },
     {
-      "source": "частичный труд",
-      "target": "lavoro parziale",
-      "category": "concept",
-      "_note": "Teilarbeit"
-    },
-    {
       "source": "трудовая армия",
       "target": "esercito del lavoro",
       "category": "concept"
@@ -1440,7 +1434,7 @@
       "category": "concept"
     },
     {
-      "source": "историческая миссия",
+      "source": "историческая миссия|исторической миссией",
       "target": "missione storica",
       "category": "concept"
     },
@@ -1466,9 +1460,10 @@
       "category": "concept"
     },
     {
-      "source": "воспроизводство в расширенном масштабе",
-      "target": "riproduzione su scala allargata",
-      "category": "concept"
+      "source": "в расширенном масштабе",
+      "target": "su scala allargata",
+      "category": "concept",
+      "_note": "riproduzione su scala allargata"
     },
     {
       "source": "периферия и полупериферия|периферии и полупериферии",
@@ -1491,7 +1486,7 @@
       "category": "concept"
     },
     {
-      "source": "прямое распределение|прямого распределения",
+      "source": "прямое распределение|прямым распределением|прямого распределения",
       "target": "distribuzione diretta",
       "category": "concept"
     },
@@ -1506,7 +1501,7 @@
       "category": "concept"
     },
     {
-      "source": "моральный и физический износ",
+      "source": "моральный и физический износ|морального и физического износа",
       "target": "logorio morale e fisico",
       "category": "concept"
     },
@@ -1585,7 +1580,7 @@
       "_note": "base e sovrastruttura"
     },
     {
-      "source": "локальный коммунизм",
+      "source": "локальный коммунизм|локальным коммунизмом",
       "target": "comunismo locale",
       "category": "concept",
       "_note": "author's coinage"
@@ -1613,11 +1608,6 @@
       "category": "concept"
     },
     {
-      "source": "научный коммунизм",
-      "target": "comunismo scientifico",
-      "category": "concept"
-    },
-    {
       "source": "научный социализм",
       "target": "socialismo scientifico",
       "category": "concept"
@@ -1633,7 +1623,7 @@
       "category": "concept"
     },
     {
-      "source": "общественный идеал",
+      "source": "общественный идеал|общественного идеала",
       "target": "ideale sociale",
       "category": "concept"
     },
@@ -1648,10 +1638,10 @@
       "category": "concept"
     },
     {
-      "source": "стихийное движение",
-      "target": "movimento spontaneo",
+      "source": "стихийный|стихийного",
+      "target": "spontaneo",
       "category": "concept",
-      "_note": "стихийный = spontaneo"
+      "_note": "Leninist sense"
     },
     {
       "source": "классовая позиция|классовую позицию|классовой позиции",
@@ -1863,6 +1853,29 @@
       "category": "phrase"
     },
     {
+      "source": "таскать вам не перетаскать",
+      "target": "possiate portarne sempre",
+      "category": "quote",
+      "_note": "folk-tale greeting in a Lenin quote (Che fare?)"
+    },
+    {
+      "source": "теория становится материальной силой, как только она овладевает массами",
+      "target": "la teoria diventa una forza materiale non appena si impadronisce delle masse",
+      "category": "quote",
+      "_note": "Marx"
+    },
+    {
+      "source": "Главный недостаток всего предшествующего материализма",
+      "target": "Il difetto principale di ogni materialismo fino ad oggi",
+      "category": "quote",
+      "_note": "Tesi su Feuerbach I"
+    },
+    {
+      "source": "пролетариат|пролетариата|пролетариатом",
+      "target": "proletariato",
+      "category": "concept"
+    },
+    {
       "source": "подвиг Фейербаха|подвиге Фейербаха",
       "target": "la grande impresa di Feuerbach",
       "category": "quote",
@@ -1956,7 +1969,7 @@
       "category": "concept"
     },
     {
-      "source": "профессиональный кретинизм",
+      "source": "профессиональный кретинизм|профессионального кретинизма",
       "target": "cretinismo professionale",
       "category": "concept",
       "_note": "Marx"
@@ -1985,7 +1998,7 @@
       "_note": "opposed to понятие"
     },
     {
-      "source": "мышление|мышления|мышлении|мышлению",
+      "source": "мышление|мышления|мышлением|мышлении|мышлению",
       "target": "pensiero",
       "category": "concept"
     },
@@ -2026,7 +2039,7 @@
       "category": "concept"
     },
     {
-      "source": "политехническое образование|Политехническое образование",
+      "source": "политехническое образование|политехническим образованием|Политехническое образование",
       "target": "istruzione politecnica",
       "category": "concept"
     },
@@ -2073,7 +2086,7 @@
       "category": "concept"
     },
     {
-      "source": "мещанский",
+      "source": "мещанский|мещанского|мещанско-поэтического",
       "target": "piccolo-borghese",
       "category": "concept"
     },
@@ -2127,12 +2140,12 @@
       "category": "concept"
     },
     {
-      "source": "программное обеспечение|программного обеспечения",
+      "source": "программное обеспечение|программным обеспечением|программного обеспечения",
       "target": "software",
       "category": "concept"
     },
     {
-      "source": "открытый код",
+      "source": "открытый код|открытым кодом|открытого кода",
       "target": "codice aperto",
       "category": "concept"
     },

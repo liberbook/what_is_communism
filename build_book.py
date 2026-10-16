@@ -36,6 +36,13 @@ CONFIGS = {
         "lang": "it",
         "basename": "che_cose_il_comunismo",
     },
+    "english": {
+        "src": ROOT / "english",
+        "title": "What Is Communism?",
+        "author": "Engels Group",
+        "lang": "en",
+        "basename": "what_is_communism",
+    },
 }
 
 PRINT_PREAMBLE_PATCH = r"""

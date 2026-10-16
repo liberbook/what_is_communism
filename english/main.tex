@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{preamble}
+\begin{document}
+\pagenumbering{gobble}
+
+% ── Page 1: full-page cover image ───────────────────────────────
+{%
+  \AddToShipoutPictureBG*{%
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{images/img-000.jpg}%
+  }%
+  \thispagestyle{empty}%
+  \null\clearpage
+}
+
+% ── Page 2: name / logo / year ──────────────────────────────────
+\thispagestyle{empty}
+\begin{center}
+\vspace*{3cm}
+\includegraphics[width=0.8\textwidth]{images/img-001.jpg}\\[2cm]
+{\Huge\bfseries What Is Communism?}\\[1cm]
+{\large Engels Group}\\[0.5cm]
+{\small Translated from the Russian with Claude Opus 5.5 and TranslateBooksWithLLMs}\\[0.4cm]
+{\large 2018}
+\vfill
+\end{center}
+\clearpage
+
+% ── Page 3: TOC ─────────────────────────────────────────────────
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% ── Parts ───────────────────────────────────────────────────────
+\subfile{parts/01_inventing_spectacles}
+\subfile{parts/02_preface}
+\subfile{parts/03_foundation}
+\subfile{parts/04_communism_reality}
+\subfile{parts/05_common_property}
+\subfile{parts/06_necessary_labour}
+\subfile{parts/07_communism_management}
+\subfile{parts/08_communism_personality}
+\subfile{parts/09_communism_family}
+\subfile{parts/10_communism_consciousness}
+\subfile{parts/11_conclusion}
+
+\end{document}

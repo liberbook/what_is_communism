@@ -18,5 +18,5 @@ WORKDIR /work
 COPY . /work
 RUN chmod +x /work/build.sh /work/build_book.py /work/compare_outputs.py /work/docker_build.sh \
  && mkdir -p /work/out \
- && chmod -R a+rwX /work/russian /work/ukrainian /work/italiano /work/out
+ && chmod -R a+rwX /work/russian /work/ukrainian /work/italiano /work/english /work/out
 CMD ["/work/build.sh"]
