@@ -1,0 +1,2181 @@
+{
+  "name": "What is communism (ru -> it)",
+  "_about": "Glossary for the whole booklet, built by build_glossary.py: the chapter-03 glossary plus terms harvested from every chapter (names in the scientific transliteration used by Italian Wikipedia, established Italian titles, short canonical formulas of Marx, Engels and Lenin, the author's coinages, and the Marxist lexicon). Each source lists the inflected forms found in the Russian text, separated by '|', so TranslateBooksWithLLMs' per-chunk filter matches them. Use with: python translate.py ... --glossary glossary.ru-it.json",
+  "terms": [
+    {
+      "source": "Что такое коммунизм?|Что такое коммунизм",
+      "target": "Che cos'è il comunismo?",
+      "category": "title",
+      "_note": "book title"
+    },
+    {
+      "source": "Группа Энгельс",
+      "target": "Gruppo Engels",
+      "category": "organization",
+      "_note": "author collective"
+    },
+    {
+      "source": "Изобретаем «очки-велосипед»|Изобретаем «очки-велосипед",
+      "target": "Inventiamo gli «occhiali-bicicletta»",
+      "category": "title",
+      "_note": "section 01"
+    },
+    {
+      "source": "Предисловие",
+      "target": "Prefazione",
+      "category": "title",
+      "_note": "section 02"
+    },
+    {
+      "source": "Основание коммунизма",
+      "target": "Il fondamento del comunismo",
+      "category": "title",
+      "_note": "section 03"
+    },
+    {
+      "source": "Коммунизм как реальность в общественном производстве",
+      "target": "Il comunismo come realtà nella produzione sociale",
+      "category": "title",
+      "_note": "section 04"
+    },
+    {
+      "source": "Общая (общественная) собственность",
+      "target": "La proprietà comune (sociale)",
+      "category": "title",
+      "_note": "section 05"
+    },
+    {
+      "source": "Необходимый труд и условия для коммунистической деятельности",
+      "target": "Il lavoro necessario e le condizioni per l'attività comunista",
+      "category": "title",
+      "_note": "section 06"
+    },
+    {
+      "source": "Коммунизм и управление общественной жизнью",
+      "target": "Il comunismo e la gestione della vita sociale",
+      "category": "title",
+      "_note": "section 07"
+    },
+    {
+      "source": "Коммунизм и личность",
+      "target": "Il comunismo e la personalità",
+      "category": "title",
+      "_note": "section 08"
+    },
+    {
+      "source": "Коммунизм и семья",
+      "target": "Il comunismo e la famiglia",
+      "category": "title",
+      "_note": "section 09"
+    },
+    {
+      "source": "Коммунизм и общественное сознание",
+      "target": "Il comunismo e la coscienza sociale",
+      "category": "title",
+      "_note": "section 10"
+    },
+    {
+      "source": "Заключение",
+      "target": "Conclusione",
+      "category": "title",
+      "_note": "section 11"
+    },
+    {
+      "source": "Маркс|Маркса|Марксов|Марксом|Марксу",
+      "target": "Marx",
+      "category": "person"
+    },
+    {
+      "source": "Энгельс|Энгельса|Энгельсом",
+      "target": "Engels",
+      "category": "person"
+    },
+    {
+      "source": "Фридрих Энгельс",
+      "target": "Friedrich Engels",
+      "category": "person"
+    },
+    {
+      "source": "Ленин|Лениным|Ленина|Ленину",
+      "target": "Lenin",
+      "category": "person"
+    },
+    {
+      "source": "Фейербах|Фейербахе|Фейербаха",
+      "target": "Feuerbach",
+      "category": "person"
+    },
+    {
+      "source": "Бенедикт Спиноза|Бенедикта Спинозы",
+      "target": "Baruch Spinoza",
+      "category": "person"
+    },
+    {
+      "source": "Гегель|Гегеля",
+      "target": "Hegel",
+      "category": "person"
+    },
+    {
+      "source": "Григорий Горин",
+      "target": "Grigorij Gorin",
+      "category": "person",
+      "_note": "screenwriter"
+    },
+    {
+      "source": "Мюнхгаузен|Мюнхгаузена",
+      "target": "Münchhausen",
+      "category": "person"
+    },
+    {
+      "source": "Маяковский|Маяковским",
+      "target": "Majakovskij",
+      "category": "person"
+    },
+    {
+      "source": "Константин Сёмин|Константина Сёмина",
+      "target": "Konstantin Sëmin",
+      "category": "person"
+    },
+    {
+      "source": "Евгений Спицин|Евгения Спицина",
+      "target": "Evgenij Spicyn",
+      "category": "person",
+      "_note": "the source misspells Спицын; use the correct name"
+    },
+    {
+      "source": "Спицин|Спицина",
+      "target": "Spicyn",
+      "category": "person"
+    },
+    {
+      "source": "Никита Михалков|Никиты Михалкова",
+      "target": "Nikita Michalkov",
+      "category": "person"
+    },
+    {
+      "source": "Михалков|Михалкова",
+      "target": "Michalkov",
+      "category": "person"
+    },
+    {
+      "source": "Глушков|Глушкова",
+      "target": "Gluškov",
+      "category": "person",
+      "_note": "Viktor Michajlovič Gluškov, OGAS project"
+    },
+    {
+      "source": "Макаренко",
+      "target": "Makarenko",
+      "category": "person",
+      "_note": "Anton Semënovič Makarenko"
+    },
+    {
+      "source": "Антон Семенович|Антон Семёнович",
+      "target": "Anton Semënovič",
+      "category": "person"
+    },
+    {
+      "source": "Горький|Горького",
+      "target": "Gor'kij",
+      "category": "person"
+    },
+    {
+      "source": "Дзержинский|Дзержинского",
+      "target": "Dzeržinskij",
+      "category": "person"
+    },
+    {
+      "source": "Прудон",
+      "target": "Proudhon",
+      "category": "person"
+    },
+    {
+      "source": "Фурье",
+      "target": "Fourier",
+      "category": "person"
+    },
+    {
+      "source": "Сен-Симон|Сен-Симону|Сен-Симона",
+      "target": "Saint-Simon",
+      "category": "person"
+    },
+    {
+      "source": "Оуэн|Оуэна",
+      "target": "Owen",
+      "category": "person"
+    },
+    {
+      "source": "Бакунин|Бакуниным",
+      "target": "Bakunin",
+      "category": "person"
+    },
+    {
+      "source": "Арнольд Руге|Арнольду Руге",
+      "target": "Arnold Ruge",
+      "category": "person"
+    },
+    {
+      "source": "Александра Коллонтай|Александры Коллонтай",
+      "target": "Aleksandra Kollontaj",
+      "category": "person"
+    },
+    {
+      "source": "Коллонтай",
+      "target": "Kollontaj",
+      "category": "person"
+    },
+    {
+      "source": "Илья Эренбург|Ильи Эренбурга",
+      "target": "Il'ja Ėrenburg",
+      "category": "person"
+    },
+    {
+      "source": "Вася|Васи|Васе|Васю|Васей",
+      "target": "Vasja",
+      "category": "person",
+      "_note": "everyman name, keep transliterated"
+    },
+    {
+      "source": "Петя|Пети|Пете|Петю|Петей",
+      "target": "Petja",
+      "category": "person",
+      "_note": "everyman name, keep transliterated"
+    },
+    {
+      "source": "Тот самый Мюнхгаузен",
+      "target": "Quel Münchhausen",
+      "category": "title",
+      "_note": "1979 TV film"
+    },
+    {
+      "source": "Последний звонок",
+      "target": "L'ultima campanella",
+      "category": "title",
+      "_note": "documentary"
+    },
+    {
+      "source": "Цитадель",
+      "target": "La cittadella",
+      "category": "title",
+      "_note": "Michalkov's film"
+    },
+    {
+      "source": "Критика Готской программы",
+      "target": "Critica del programma di Gotha",
+      "category": "title"
+    },
+    {
+      "source": "Готская программа|Готскую программу|Готской программе",
+      "target": "programma di Gotha",
+      "category": "title"
+    },
+    {
+      "source": "Великий почин",
+      "target": "La grande iniziativa",
+      "category": "title",
+      "_note": "Lenin 1919"
+    },
+    {
+      "source": "Эльберфельдские речи|Эльберфельдских речах",
+      "target": "Discorsi di Elberfeld",
+      "category": "title",
+      "_note": "Engels 1845"
+    },
+    {
+      "source": "Государство и революция|Государстве и Революции",
+      "target": "Stato e rivoluzione",
+      "category": "title",
+      "_note": "Lenin"
+    },
+    {
+      "source": "Манифест коммунистической партии|Манифесте коммунистической партии",
+      "target": "Manifesto del Partito Comunista",
+      "category": "title"
+    },
+    {
+      "source": "Манифест|Манифеста|Манифесту|Манифестом|Манифесте",
+      "target": "Manifesto",
+      "category": "title",
+      "_note": "short form of the Manifesto"
+    },
+    {
+      "source": "Экономическо-философские рукописи 1844 года",
+      "target": "Manoscritti economico-filosofici del 1844",
+      "category": "title"
+    },
+    {
+      "source": "Рукописи|Рукописей|Рукописям|Рукописях",
+      "target": "Manoscritti",
+      "category": "title",
+      "_note": "short form"
+    },
+    {
+      "source": "Экономические рукописи 1857–1859 годов",
+      "target": "Manoscritti economici del 1857-1859",
+      "category": "title",
+      "_note": "the Grundrisse"
+    },
+    {
+      "source": "Капитал|Капитала|Капиталу|Капиталом|Капитале",
+      "target": "Il Capitale",
+      "category": "title",
+      "_note": "as a title"
+    },
+    {
+      "source": "Происхождение семьи, частной собственности и государства",
+      "target": "L'origine della famiglia, della proprietà privata e dello Stato",
+      "category": "title",
+      "_note": "Engels"
+    },
+    {
+      "source": "Дорогу крылатому Эросу!|Дорогу крылатому Эросу",
+      "target": "Largo all'Eros alato!",
+      "category": "title",
+      "_note": "Kollontaj 1923"
+    },
+    {
+      "source": "Василиса Малыгина",
+      "target": "Vasilisa Malygina",
+      "category": "title",
+      "_note": "Kollontaj"
+    },
+    {
+      "source": "Большая любовь",
+      "target": "Un grande amore",
+      "category": "title",
+      "_note": "Kollontaj"
+    },
+    {
+      "source": "День второй",
+      "target": "Il secondo giorno",
+      "category": "title",
+      "_note": "Ėrenburg 1933"
+    },
+    {
+      "source": "Что делать?|Что делать",
+      "target": "Che fare?",
+      "category": "title",
+      "_note": "Lenin"
+    },
+    {
+      "source": "Раб. Дело",
+      "target": "Rab. Delo",
+      "category": "title",
+      "_note": "journal abbreviation inside a Lenin quote"
+    },
+    {
+      "source": "К критике гегелевской философии права",
+      "target": "Per la critica della filosofia del diritto di Hegel",
+      "category": "title",
+      "_note": "Marx"
+    },
+    {
+      "source": "тезисы о Фейербахе|тезисе о Фейербахе",
+      "target": "Tesi su Feuerbach",
+      "category": "title"
+    },
+    {
+      "source": "СССР",
+      "target": "URSS",
+      "category": "acronym"
+    },
+    {
+      "source": "Советский Союз|Советского Союза|Советскому Союзу|Советском Союзе",
+      "target": "Unione Sovietica",
+      "category": "place"
+    },
+    {
+      "source": "РФ",
+      "target": "Federazione Russa",
+      "category": "acronym"
+    },
+    {
+      "source": "США",
+      "target": "Stati Uniti",
+      "category": "acronym"
+    },
+    {
+      "source": "МОТ",
+      "target": "OIL",
+      "category": "acronym",
+      "_note": "Organizzazione Internazionale del Lavoro"
+    },
+    {
+      "source": "ПО",
+      "target": "software",
+      "category": "acronym",
+      "_note": "программное обеспечение"
+    },
+    {
+      "source": "нэп|нэпа|нэпу|нэпом|нэпе|НЭП|НЭПа",
+      "target": "NEP",
+      "category": "acronym"
+    },
+    {
+      "source": "ликбез|ликбеза",
+      "target": "likbez",
+      "category": "acronym",
+      "_note": "campagna di liquidazione dell'analfabetismo; the text glosses it"
+    },
+    {
+      "source": "всеобуч",
+      "target": "vseobuč",
+      "category": "acronym",
+      "_note": "istruzione elementare universale; the text glosses it"
+    },
+    {
+      "source": "соцлагерь|соцлагеря",
+      "target": "campo socialista",
+      "category": "organization"
+    },
+    {
+      "source": "большевики|большевиков|большевиками",
+      "target": "bolscevichi",
+      "category": "organization"
+    },
+    {
+      "source": "советы|Советов|совет|Советы|советам|советов",
+      "target": "soviet",
+      "category": "organization",
+      "_note": "invariable, lowercase: i soviet"
+    },
+    {
+      "source": "Советы рабочих, солдатских и крестьянских депутатов",
+      "target": "soviet dei deputati operai, soldati e contadini",
+      "category": "organization"
+    },
+    {
+      "source": "Всемирная республика Советов|Всемирную республику Советов",
+      "target": "Repubblica mondiale dei soviet",
+      "category": "organization"
+    },
+    {
+      "source": "Временное правительство",
+      "target": "Governo provvisorio",
+      "category": "organization"
+    },
+    {
+      "source": "царское правительство",
+      "target": "governo zarista",
+      "category": "organization"
+    },
+    {
+      "source": "Интернационал|Интернационалу",
+      "target": "Internazionale",
+      "category": "organization"
+    },
+    {
+      "source": "Парижская Коммуна",
+      "target": "Comune di Parigi",
+      "category": "event",
+      "_note": "feminine"
+    },
+    {
+      "source": "Государственный комитет статистики",
+      "target": "Comitato statale di statistica",
+      "category": "organization"
+    },
+    {
+      "source": "Институт демографии НАН Украины|Институтом демографии НАН Украины",
+      "target": "Istituto di demografia dell'Accademia nazionale delle scienze dell'Ucraina",
+      "category": "organization"
+    },
+    {
+      "source": "колония имени Горького|колонии имени Горького",
+      "target": "colonia Gor'kij",
+      "category": "organization",
+      "_note": "Makarenko"
+    },
+    {
+      "source": "коммуна имени Дзержинского|коммуне имени Дзержинского",
+      "target": "comune Dzeržinskij",
+      "category": "organization",
+      "_note": "Makarenko"
+    },
+    {
+      "source": "физиократы|физиократам",
+      "target": "fisiocratici",
+      "category": "organization"
+    },
+    {
+      "source": "тред-юнионы|тред-юнионов",
+      "target": "trade unions",
+      "category": "organization"
+    },
+    {
+      "source": "революционные интернационалисты|революционных интернационалистов",
+      "target": "internazionalisti rivoluzionari",
+      "category": "organization"
+    },
+    {
+      "source": "Макдональдс",
+      "target": "McDonald's",
+      "category": "organization"
+    },
+    {
+      "source": "Linux",
+      "target": "Linux",
+      "category": "organization"
+    },
+    {
+      "source": "Windows",
+      "target": "Windows",
+      "category": "organization"
+    },
+    {
+      "source": "Москва|Москве",
+      "target": "Mosca",
+      "category": "place"
+    },
+    {
+      "source": "Куба|Кубе",
+      "target": "Cuba",
+      "category": "place"
+    },
+    {
+      "source": "Дрезден",
+      "target": "Dresda",
+      "category": "place"
+    },
+    {
+      "source": "Донбасс",
+      "target": "Donbass",
+      "category": "place"
+    },
+    {
+      "source": "Приднестровье",
+      "target": "Transnistria",
+      "category": "place"
+    },
+    {
+      "source": "Абхазия",
+      "target": "Abcasia",
+      "category": "place"
+    },
+    {
+      "source": "Южная Осетия",
+      "target": "Ossezia del Sud",
+      "category": "place"
+    },
+    {
+      "source": "Нагорный Карабах",
+      "target": "Nagorno Karabakh",
+      "category": "place"
+    },
+    {
+      "source": "Таджикистан|Таджикистане",
+      "target": "Tagikistan",
+      "category": "place"
+    },
+    {
+      "source": "нацистская Германия|нацистской Германии",
+      "target": "Germania nazista",
+      "category": "place"
+    },
+    {
+      "source": "среднеазиатские республики|среднеазиатских республиках",
+      "target": "repubbliche centroasiatiche",
+      "category": "place"
+    },
+    {
+      "source": "Московско-Казанская железная дорога",
+      "target": "ferrovia Mosca-Kazan'",
+      "category": "place"
+    },
+    {
+      "source": "Октябрь|Октября|Октябрю|Октябрём|Октябре",
+      "target": "Ottobre",
+      "category": "event",
+      "_note": "the October Revolution; centenario dell'Ottobre"
+    },
+    {
+      "source": "Великая Октябрьская Революция",
+      "target": "Grande Rivoluzione d'Ottobre",
+      "category": "event"
+    },
+    {
+      "source": "Великая Октябрьская социалистическая революция|Великой Октябрьской социалистической революции",
+      "target": "Grande Rivoluzione socialista d'Ottobre",
+      "category": "event"
+    },
+    {
+      "source": "Февральская революция|Февральской революции",
+      "target": "Rivoluzione di febbraio",
+      "category": "event"
+    },
+    {
+      "source": "июльские события 1917 года",
+      "target": "giornate di luglio del 1917",
+      "category": "event"
+    },
+    {
+      "source": "двоевластие|двоевластия",
+      "target": "dualismo del potere",
+      "category": "concept",
+      "_note": "Lenin's term"
+    },
+    {
+      "source": "Мировая Революция",
+      "target": "Rivoluzione mondiale",
+      "category": "event",
+      "_note": "capitalized as the name of the hypothesis"
+    },
+    {
+      "source": "военный коммунизм",
+      "target": "comunismo di guerra",
+      "category": "event"
+    },
+    {
+      "source": "индустриализация|индустриализации",
+      "target": "industrializzazione",
+      "category": "event"
+    },
+    {
+      "source": "гражданская война|гражданской войны",
+      "target": "guerra civile",
+      "category": "event",
+      "_note": "the Russian Civil War"
+    },
+    {
+      "source": "Первая Мировая|Первой Мировой",
+      "target": "prima guerra mondiale",
+      "category": "event"
+    },
+    {
+      "source": "Великая Отечественная война|Великой Отечественной войне|Великой Отечественной войны",
+      "target": "Grande guerra patriottica",
+      "category": "event"
+    },
+    {
+      "source": "чеченские войны",
+      "target": "guerre cecene",
+      "category": "event"
+    },
+    {
+      "source": "коммунистический субботник|коммунистические субботники|коммунистических субботников|коммунистическим субботником",
+      "target": "sabato comunista",
+      "category": "event",
+      "_note": "plural: sabati comunisti, as in the Italian Lenin"
+    },
+    {
+      "source": "субботник|субботники|субботников|субботником|субботника|Субботники",
+      "target": "sabato comunista",
+      "category": "event"
+    },
+    {
+      "source": "Средние века|Средних Веков",
+      "target": "Medioevo",
+      "category": "event"
+    },
+    {
+      "source": "распад СССР|распада СССР",
+      "target": "dissoluzione dell'URSS",
+      "category": "event"
+    },
+    {
+      "source": "реставрация капитализма|реставрацию капитализма",
+      "target": "restaurazione del capitalismo",
+      "category": "concept"
+    },
+    {
+      "source": "молочная кухня|молочной кухни",
+      "target": "centro di distribuzione del latte per l'infanzia",
+      "category": "organization",
+      "_note": "Soviet municipal service"
+    },
+    {
+      "source": "коммуна-общежитие",
+      "target": "casa-comune",
+      "category": "concept",
+      "_note": "1920s house-communes"
+    },
+    {
+      "source": "сын полка|сыны полка",
+      "target": "figlio del reggimento",
+      "category": "phrase",
+      "_note": "war orphans adopted by army units"
+    },
+    {
+      "source": "беспризорность|беспризорности",
+      "target": "infanzia abbandonata",
+      "category": "concept"
+    },
+    {
+      "source": "очки-велосипед",
+      "target": "occhiali-bicicletta",
+      "category": "concept",
+      "_note": "author's coinage after Majakovskij; keep the quotation marks"
+    },
+    {
+      "source": "непосредственно-коллективная форма|Непосредственно-коллективная форма|непосредственно-коллективной форме|непосредственно-коллективных формах|непосредственно-коллективной формой|непосредственно-коллективных форм|непосредственно-коллективные формы|непосредственно-коллективную форму|непосредственно-коллективной формы",
+      "target": "forma immediatamente collettiva",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственная коллективность|Непосредственная коллективность",
+      "target": "collettività immediata",
+      "category": "concept"
+    },
+    {
+      "source": "формы коллективности|форм коллективности",
+      "target": "forme di collettività",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственно-общественный",
+      "target": "immediatamente sociale",
+      "category": "concept"
+    },
+    {
+      "source": "свободная деятельность|Свободная деятельность|свободной деятельности|свободную деятельность",
+      "target": "attività libera",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистическая деятельность|коммунистической деятельности|Коммунистической деятельностью",
+      "target": "attività comunista",
+      "category": "concept"
+    },
+    {
+      "source": "ростки коммунизма|ростки» коммунизма|ростках коммунизма",
+      "target": "germogli del comunismo",
+      "category": "concept",
+      "_note": "Lenin's image"
+    },
+    {
+      "source": "зародыш|зародыши|зародыша|Зародыш",
+      "target": "germe",
+      "category": "concept",
+      "_note": "distinct from ростки (germogli) and клеточка (cellula)"
+    },
+    {
+      "source": "клеточка|клеточкой",
+      "target": "cellula",
+      "category": "concept",
+      "_note": "Marx's cell-form"
+    },
+    {
+      "source": "хозяйственная ячейка|хозяйственной ячейки",
+      "target": "unità economica",
+      "category": "concept",
+      "_note": "not cellula"
+    },
+    {
+      "source": "товарное производство|товарного производства|товарном производстве|Товарное производство",
+      "target": "produzione di merci",
+      "category": "concept"
+    },
+    {
+      "source": "товар|товаром|товаров|товара|товары|товарами",
+      "target": "merce",
+      "category": "concept"
+    },
+    {
+      "source": "товарная форма|товарную форму|товарной формы",
+      "target": "forma di merce",
+      "category": "concept"
+    },
+    {
+      "source": "товаровладелец",
+      "target": "possessore di merci",
+      "category": "concept"
+    },
+    {
+      "source": "товаропроизводитель|товаропроизводители",
+      "target": "produttore di merci",
+      "category": "concept"
+    },
+    {
+      "source": "вещное производство|вещного производства",
+      "target": "produzione cosale",
+      "category": "concept",
+      "_note": "вещный = cosale (sachlich), not reificato"
+    },
+    {
+      "source": "вещный характер труда",
+      "target": "carattere cosale del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "вещный труд",
+      "target": "lavoro cosale",
+      "category": "concept"
+    },
+    {
+      "source": "самостоятельно-вещная форма|самостоятельно-вещную форму",
+      "target": "forma cosale autonoma",
+      "category": "concept"
+    },
+    {
+      "source": "способ производства|способов производства|способы производства|способом производства|способа производства|способе производства",
+      "target": "modo di produzione",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистический способ производства|Коммунистический способ производства",
+      "target": "modo di produzione comunista",
+      "category": "concept"
+    },
+    {
+      "source": "производственные отношения|производственным отношениями|производственных отношений",
+      "target": "rapporti di produzione",
+      "category": "concept"
+    },
+    {
+      "source": "общественные отношения|общественных отношений|общественное отношение|общественного отношения|Общественные отношения",
+      "target": "rapporti sociali",
+      "category": "concept"
+    },
+    {
+      "source": "производительные силы|производительных сила|производительных сил|производительную силу",
+      "target": "forze produttive",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственная производительная сила|непосредственную производительную силу",
+      "target": "forza produttiva immediata",
+      "category": "concept",
+      "_note": "science as a productive force"
+    },
+    {
+      "source": "средства производства|средств производства|средствам производства|средство производства|средствами производства",
+      "target": "mezzi di produzione",
+      "category": "concept"
+    },
+    {
+      "source": "предмет труда|предметов труда|предмету труда",
+      "target": "oggetto di lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "общественный уклад",
+      "target": "assetto sociale",
+      "category": "concept"
+    },
+    {
+      "source": "общественное устройство|общественного устройства",
+      "target": "ordinamento sociale",
+      "category": "concept"
+    },
+    {
+      "source": "общественный строй",
+      "target": "regime sociale",
+      "category": "concept"
+    },
+    {
+      "source": "общественное богатство|общественного богатства|общественному богатству",
+      "target": "ricchezza sociale",
+      "category": "concept"
+    },
+    {
+      "source": "общественное бытие",
+      "target": "essere sociale",
+      "category": "concept"
+    },
+    {
+      "source": "общественное бытие определяет общественное сознание",
+      "target": "l'essere sociale determina la coscienza sociale",
+      "category": "quote",
+      "_note": "Marx 1859"
+    },
+    {
+      "source": "общественное сознание|общественного сознания|Общественное сознание|общественном сознании|общественному сознанию",
+      "target": "coscienza sociale",
+      "category": "concept"
+    },
+    {
+      "source": "формы общественного сознания|форм общественного сознания|форме общественного сознания|формам общественного сознания",
+      "target": "forme della coscienza sociale",
+      "category": "concept"
+    },
+    {
+      "source": "классовое сознание|классового сознания|классовому сознанию",
+      "target": "coscienza di classe",
+      "category": "concept"
+    },
+    {
+      "source": "индивидуальное сознание",
+      "target": "coscienza individuale",
+      "category": "concept"
+    },
+    {
+      "source": "мифологическое сознание|мифологического сознания",
+      "target": "coscienza mitologica",
+      "category": "concept"
+    },
+    {
+      "source": "материалистическое понимание истории",
+      "target": "concezione materialistica della storia",
+      "category": "concept"
+    },
+    {
+      "source": "содержательная форма",
+      "target": "forma contenutistica",
+      "category": "concept"
+    },
+    {
+      "source": "универсальное отношение",
+      "target": "rapporto universale",
+      "category": "concept"
+    },
+    {
+      "source": "самоценная деятельность",
+      "target": "attività che ha valore in sé",
+      "category": "concept"
+    },
+    {
+      "source": "самоценность деятельности",
+      "target": "valore in sé dell'attività",
+      "category": "concept"
+    },
+    {
+      "source": "предметная деятельность|предметную деятельность",
+      "target": "attività oggettiva",
+      "category": "concept",
+      "_note": "Tesi su Feuerbach"
+    },
+    {
+      "source": "предметно-практическое существо|предметно-практического существа",
+      "target": "essere oggettivo-pratico",
+      "category": "concept"
+    },
+    {
+      "source": "созерцание|созерцания",
+      "target": "intuizione",
+      "category": "concept",
+      "_note": "Anschauung in the Tesi su Feuerbach"
+    },
+    {
+      "source": "практика|практики|практике",
+      "target": "prassi",
+      "category": "concept"
+    },
+    {
+      "source": "товарищество",
+      "target": "sodalizio",
+      "category": "concept",
+      "_note": "not cameratismo (fascist connotation)"
+    },
+    {
+      "source": "свободная ассоциация|свободной ассоциации",
+      "target": "libera associazione",
+      "category": "concept"
+    },
+    {
+      "source": "свободная и равная ассоциация производителей|свободной и равной ассоциации производителей",
+      "target": "libera ed eguale associazione dei produttori",
+      "category": "quote",
+      "_note": "Engels"
+    },
+    {
+      "source": "самодействующая и самоуправляемая ассоциация",
+      "target": "associazione autoattiva e autogovernata",
+      "category": "concept"
+    },
+    {
+      "source": "социальное творчество|социальным творчеством",
+      "target": "creatività sociale",
+      "category": "concept"
+    },
+    {
+      "source": "самодетерминация|самодетерминации",
+      "target": "autodeterminazione",
+      "category": "concept"
+    },
+    {
+      "source": "самовозрастание|самовозрастанию|самовозрастания",
+      "target": "autovalorizzazione",
+      "category": "concept",
+      "_note": "Selbstverwertung des Werts"
+    },
+    {
+      "source": "освоение|освоения",
+      "target": "appropriazione",
+      "category": "concept",
+      "_note": "appropriazione (della cultura, del mondo)"
+    },
+    {
+      "source": "присвоение|присвоения|Присвоение",
+      "target": "appropriazione",
+      "category": "concept",
+      "_note": "Aneignung"
+    },
+    {
+      "source": "частный характер присвоения",
+      "target": "carattere privato dell'appropriazione",
+      "category": "concept"
+    },
+    {
+      "source": "общественный характер присвоения",
+      "target": "carattere sociale dell'appropriazione",
+      "category": "concept"
+    },
+    {
+      "source": "по меркам истины, добра и красоты|по меркам истины добра и красоты",
+      "target": "secondo i criteri della verità, del bene e della bellezza",
+      "category": "phrase"
+    },
+    {
+      "source": "по меркам свободы",
+      "target": "secondo la misura della libertà",
+      "category": "phrase"
+    },
+    {
+      "source": "на острие противоречий",
+      "target": "sul filo delle contraddizioni",
+      "category": "phrase"
+    },
+    {
+      "source": "целенаправленно|целенаправленного",
+      "target": "in modo mirato",
+      "category": "phrase"
+    },
+    {
+      "source": "разбазаривание|разбазариванию",
+      "target": "dilapidazione",
+      "category": "concept"
+    },
+    {
+      "source": "материалистические друзья гегелевской диалектики",
+      "target": "amici materialisti della dialettica hegeliana",
+      "category": "quote",
+      "_note": "Lenin"
+    },
+    {
+      "source": "первейшая жизненная потребность",
+      "target": "primo bisogno della vita",
+      "category": "quote",
+      "_note": "Critica del programma di Gotha"
+    },
+    {
+      "source": "первой потребностью жизни",
+      "target": "primo bisogno della vita",
+      "category": "quote",
+      "_note": "same formula, chapter 02"
+    },
+    {
+      "source": "без нормы и вознаграждения",
+      "target": "senza norma e senza compenso",
+      "category": "quote",
+      "_note": "Lenin, La grande iniziativa"
+    },
+    {
+      "source": "управление вещами|управлению вещами|управления вещами",
+      "target": "amministrazione delle cose",
+      "category": "quote",
+      "_note": "Engels"
+    },
+    {
+      "source": "управление людьми|управления людьми",
+      "target": "governo degli uomini",
+      "category": "quote",
+      "_note": "Engels"
+    },
+    {
+      "source": "управление общественной жизнью|управления общественной жизнью|Управление общественной жизнью",
+      "target": "gestione della vita sociale",
+      "category": "concept"
+    },
+    {
+      "source": "управление общественным развитием|управлении общественным развитием|Управление общественным развитием",
+      "target": "gestione dello sviluppo sociale",
+      "category": "concept"
+    },
+    {
+      "source": "управлять государством",
+      "target": "governare lo Stato",
+      "category": "phrase",
+      "_note": "Lenin"
+    },
+    {
+      "source": "осознанная необходимость|осознанную необходимость",
+      "target": "necessità compresa",
+      "category": "quote",
+      "_note": "Engels/Hegel formula"
+    },
+    {
+      "source": "Каждый по способностям, каждому по потребностям",
+      "target": "Ognuno secondo le sue capacità, a ognuno secondo i suoi bisogni",
+      "category": "quote",
+      "_note": "Critica del programma di Gotha"
+    },
+    {
+      "source": "высшая фаза коммунизма|высшей фазой коммунизма",
+      "target": "fase superiore del comunismo",
+      "category": "concept"
+    },
+    {
+      "source": "низшая фаза коммунизма|Низшая фаза коммунизма",
+      "target": "prima fase del comunismo",
+      "category": "concept"
+    },
+    {
+      "source": "первая фаза коммунистического общества|первой фазы коммунистического общества",
+      "target": "prima fase della società comunista",
+      "category": "concept"
+    },
+    {
+      "source": "переходный период",
+      "target": "periodo di transizione",
+      "category": "concept"
+    },
+    {
+      "source": "разделение труда|разделению труда|разделения труда",
+      "target": "divisione del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "общественное разделение труда|общественного разделения труда|Общественное разделение труда",
+      "target": "divisione sociale del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "снятие разделения труда|снятия разделения труда",
+      "target": "superamento della divisione del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "снятие|снятия|снятию|снятием|снятии",
+      "target": "superamento",
+      "category": "concept",
+      "_note": "Aufhebung"
+    },
+    {
+      "source": "упразднение|упразднения",
+      "target": "soppressione",
+      "category": "concept",
+      "_note": "Bobbio's Manoscritti"
+    },
+    {
+      "source": "уничтожение частной собственности|уничтожении частной собственности|Уничтожение частной собственности|уничтожения частной собственности|уничтожению частной собственности",
+      "target": "abolizione della proprietà privata",
+      "category": "concept",
+      "_note": "Manifesto"
+    },
+    {
+      "source": "положительное упразднение частной собственности",
+      "target": "soppressione positiva della proprietà privata",
+      "category": "quote",
+      "_note": "Manoscritti 1844"
+    },
+    {
+      "source": "противоположность умственного и физического труда",
+      "target": "antitesi tra lavoro intellettuale e lavoro fisico",
+      "category": "concept"
+    },
+    {
+      "source": "буржуазное право|буржуазного права",
+      "target": "diritto borghese",
+      "category": "concept"
+    },
+    {
+      "source": "всестороннее развитие",
+      "target": "sviluppo onnilaterale",
+      "category": "concept"
+    },
+    {
+      "source": "универсально-развитая личность",
+      "target": "personalità universalmente sviluppata",
+      "category": "concept"
+    },
+    {
+      "source": "универсальный творец",
+      "target": "creatore universale",
+      "category": "concept"
+    },
+    {
+      "source": "личность|личности|Личность|Личностью|личностью",
+      "target": "personalità",
+      "category": "concept",
+      "_note": "never persona"
+    },
+    {
+      "source": "личность-творец",
+      "target": "personalità creatrice",
+      "category": "concept"
+    },
+    {
+      "source": "дурная индивидуальность",
+      "target": "cattiva individualità",
+      "category": "concept",
+      "_note": "Hegelian schlecht"
+    },
+    {
+      "source": "истинная индивидуальность|истинной индивидуальности",
+      "target": "vera individualità",
+      "category": "concept"
+    },
+    {
+      "source": "становление сущности человека|становления сущности человека",
+      "target": "divenire dell'essenza umana",
+      "category": "concept"
+    },
+    {
+      "source": "становление|становлении|становлению|становления|Становление",
+      "target": "divenire",
+      "category": "concept",
+      "_note": "Hegelian Werden"
+    },
+    {
+      "source": "становящийся человек",
+      "target": "uomo in divenire",
+      "category": "concept"
+    },
+    {
+      "source": "человеческая сущность|человеческой сущности",
+      "target": "essenza umana",
+      "category": "concept"
+    },
+    {
+      "source": "целостный человек",
+      "target": "uomo integrale",
+      "category": "concept"
+    },
+    {
+      "source": "общественный человек",
+      "target": "uomo sociale",
+      "category": "concept"
+    },
+    {
+      "source": "новый человек",
+      "target": "uomo nuovo",
+      "category": "concept"
+    },
+    {
+      "source": "минимум человечности",
+      "target": "minimo di umanità",
+      "category": "concept"
+    },
+    {
+      "source": "частная собственность|частной собственности|частной собственностью|Частная собственность|частную собственность|Частной собственности",
+      "target": "proprietà privata",
+      "category": "concept"
+    },
+    {
+      "source": "личная собственность|личной собственности",
+      "target": "proprietà personale",
+      "category": "concept",
+      "_note": "never proprietà individuale"
+    },
+    {
+      "source": "общая собственность|общую собственность|общей собственности",
+      "target": "proprietà comune",
+      "category": "concept"
+    },
+    {
+      "source": "общественная собственность|общественная) собственность|Общественная собственность|общественной собственностью|общественной собственности",
+      "target": "proprietà sociale",
+      "category": "concept"
+    },
+    {
+      "source": "семейная собственность|семейной собственности",
+      "target": "proprietà familiare",
+      "category": "concept"
+    },
+    {
+      "source": "земельная собственность|земельной собственности",
+      "target": "proprietà fondiaria",
+      "category": "concept"
+    },
+    {
+      "source": "земельная рента|земельной ренты",
+      "target": "rendita fondiaria",
+      "category": "concept"
+    },
+    {
+      "source": "частный собственник",
+      "target": "proprietario privato",
+      "category": "concept"
+    },
+    {
+      "source": "всеобщая частная собственность|всеобщую частную собственность",
+      "target": "proprietà privata universale",
+      "category": "concept",
+      "_note": "Manoscritti 1844"
+    },
+    {
+      "source": "грубый коммунизм|Грубый коммунизм",
+      "target": "comunismo rozzo",
+      "category": "concept",
+      "_note": "Manoscritti 1844"
+    },
+    {
+      "source": "общность жён|общность жен|общности жен",
+      "target": "comunanza delle donne",
+      "category": "concept"
+    },
+    {
+      "source": "псевдокоммунизм|псевдокоммунизма",
+      "target": "pseudocomunismo",
+      "category": "concept"
+    },
+    {
+      "source": "обобществление нищеты|обобществления нищеты",
+      "target": "socializzazione della miseria",
+      "category": "phrase"
+    },
+    {
+      "source": "Всё отнять и поделить",
+      "target": "Prendere tutto e spartire",
+      "category": "phrase",
+      "_note": "Bulgakov allusion; keep the guillemets"
+    },
+    {
+      "source": "обобществление|обобществления|обобществлении|Обобществление",
+      "target": "socializzazione",
+      "category": "concept",
+      "_note": "not collettivizzazione"
+    },
+    {
+      "source": "формальное обобществление|формального обобществления|Формальное обобществление|формальном обобществлении",
+      "target": "socializzazione formale",
+      "category": "concept"
+    },
+    {
+      "source": "реальное обобществление|реальном обобществлении",
+      "target": "socializzazione reale",
+      "category": "concept"
+    },
+    {
+      "source": "рабочая сила|рабочей силы|рабочую силу|рабочие силы",
+      "target": "forza-lavoro",
+      "category": "concept",
+      "_note": "hyphenated"
+    },
+    {
+      "source": "купля-продажа рабочей силы",
+      "target": "compravendita della forza-lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "наёмный труд",
+      "target": "lavoro salariato",
+      "category": "concept"
+    },
+    {
+      "source": "живой труд",
+      "target": "lavoro vivo",
+      "category": "concept"
+    },
+    {
+      "source": "необходимый труд|Необходимый труд",
+      "target": "lavoro necessario",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочный труд",
+      "target": "pluslavoro",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочный продукт",
+      "target": "plusprodotto",
+      "category": "concept"
+    },
+    {
+      "source": "прибавочная стоимость|прибавочной стоимости",
+      "target": "plusvalore",
+      "category": "concept"
+    },
+    {
+      "source": "потребительная стоимость|потребительной стоимости",
+      "target": "valore d'uso",
+      "category": "concept"
+    },
+    {
+      "source": "закон стоимости",
+      "target": "legge del valore",
+      "category": "concept"
+    },
+    {
+      "source": "заработная плата|заработной платы",
+      "target": "salario",
+      "category": "concept"
+    },
+    {
+      "source": "производительность труда|производительности труда",
+      "target": "produttività del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "необходимое общественное рабочее время",
+      "target": "tempo di lavoro socialmente necessario",
+      "category": "concept"
+    },
+    {
+      "source": "свободное время|Свободное время|свободное (время",
+      "target": "tempo libero",
+      "category": "concept"
+    },
+    {
+      "source": "частичный труд",
+      "target": "lavoro parziale",
+      "category": "concept",
+      "_note": "Teilarbeit"
+    },
+    {
+      "source": "трудовая армия",
+      "target": "esercito del lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "коллективный капиталист",
+      "target": "capitalista collettivo",
+      "category": "concept",
+      "_note": "Engels"
+    },
+    {
+      "source": "господство капитала|господства капитала|господстве капитал",
+      "target": "dominio del capitale",
+      "category": "concept"
+    },
+    {
+      "source": "капитал как общественное отношение|капитала как общественного отношения",
+      "target": "il capitale come rapporto sociale",
+      "category": "concept"
+    },
+    {
+      "source": "историческая роль капитала|исторической роли капитала|Историческая роль капитала",
+      "target": "missione storica del capitale",
+      "category": "concept"
+    },
+    {
+      "source": "историческая миссия",
+      "target": "missione storica",
+      "category": "concept"
+    },
+    {
+      "source": "автоматическая фабрика|автоматической фабрике|автоматической фабрикой",
+      "target": "fabbrica automatica",
+      "category": "concept",
+      "_note": "Marx"
+    },
+    {
+      "source": "кризис перепроизводства|кризисы перепроизводства",
+      "target": "crisi di sovrapproduzione",
+      "category": "concept"
+    },
+    {
+      "source": "относительное обнищание|относительном обнищании",
+      "target": "impoverimento relativo",
+      "category": "concept"
+    },
+    {
+      "source": "абсолютная нищета",
+      "target": "miseria assoluta",
+      "category": "concept"
+    },
+    {
+      "source": "воспроизводство в расширенном масштабе",
+      "target": "riproduzione su scala allargata",
+      "category": "concept"
+    },
+    {
+      "source": "периферия и полупериферия|периферии и полупериферии",
+      "target": "periferia e semiperiferia",
+      "category": "concept"
+    },
+    {
+      "source": "эксплуатация человека человеком|эксплуатации человека человеком|эксплуатацию человека человеком",
+      "target": "sfruttamento dell'uomo sull'uomo",
+      "category": "phrase"
+    },
+    {
+      "source": "денежно-товарные отношения",
+      "target": "rapporti monetario-mercantili",
+      "category": "concept"
+    },
+    {
+      "source": "товарно-денежные отношения|товарно-денежных отношений",
+      "target": "rapporti monetario-mercantili",
+      "category": "concept"
+    },
+    {
+      "source": "прямое распределение|прямого распределения",
+      "target": "distribuzione diretta",
+      "category": "concept"
+    },
+    {
+      "source": "натуральное хозяйство|натуральном хозяйстве",
+      "target": "economia naturale",
+      "category": "concept"
+    },
+    {
+      "source": "потребительский кооператив|потребительских кооперативов|потребительского кооператива",
+      "target": "cooperativa di consumo",
+      "category": "concept"
+    },
+    {
+      "source": "моральный и физический износ",
+      "target": "logorio morale e fisico",
+      "category": "concept"
+    },
+    {
+      "source": "экономический агент|экономического агента|экономических агентов",
+      "target": "agente economico",
+      "category": "concept"
+    },
+    {
+      "source": "способ общения|способом общения",
+      "target": "forma di relazioni",
+      "category": "concept",
+      "_note": "Verkehrsform"
+    },
+    {
+      "source": "материальное производство|материального производства|материальном производстве|материальным производством",
+      "target": "produzione materiale",
+      "category": "concept"
+    },
+    {
+      "source": "непосредственное производство человека|непосредственного производства человека",
+      "target": "produzione immediata dell'uomo",
+      "category": "concept"
+    },
+    {
+      "source": "производство и воспроизводство непосредственной жизни",
+      "target": "produzione e riproduzione della vita immediata",
+      "category": "quote",
+      "_note": "Engels"
+    },
+    {
+      "source": "производство средств к жизни",
+      "target": "produzione dei mezzi di sussistenza",
+      "category": "concept"
+    },
+    {
+      "source": "продолжение рода",
+      "target": "riproduzione della specie",
+      "category": "concept"
+    },
+    {
+      "source": "воспроизводство общественной жизни|воспроизводством общественной жизни|воспроизводства общественной жизни",
+      "target": "riproduzione della vita sociale",
+      "category": "concept"
+    },
+    {
+      "source": "идеальное|идеального|идеальному|идеальным|идеальном",
+      "target": "ideale",
+      "category": "concept",
+      "_note": "Il'enkov's category: l'ideale"
+    },
+    {
+      "source": "производство идеального|производства идеального",
+      "target": "produzione dell'ideale",
+      "category": "concept"
+    },
+    {
+      "source": "сфера идеального|сфере идеального|сферы идеального",
+      "target": "sfera dell'ideale",
+      "category": "concept"
+    },
+    {
+      "source": "надстроечная деятельность|надстроечной деятельности",
+      "target": "attività sovrastrutturale",
+      "category": "concept"
+    },
+    {
+      "source": "надстройка",
+      "target": "sovrastruttura",
+      "category": "concept"
+    },
+    {
+      "source": "базис|базисе",
+      "target": "base",
+      "category": "concept",
+      "_note": "base e sovrastruttura"
+    },
+    {
+      "source": "локальный коммунизм",
+      "target": "comunismo locale",
+      "category": "concept",
+      "_note": "author's coinage"
+    },
+    {
+      "source": "тотальный коммунизм",
+      "target": "comunismo totale",
+      "category": "concept",
+      "_note": "author's coinage"
+    },
+    {
+      "source": "коммунизм по нужде|Коммунизм по нужде|коммунизмом по нужде",
+      "target": "comunismo per bisogno",
+      "category": "concept",
+      "_note": "contrast with по внутренней необходимости"
+    },
+    {
+      "source": "коммунизм по внутренней необходимости|коммунизмом по внутренней необходимости",
+      "target": "comunismo per necessità interna",
+      "category": "concept"
+    },
+    {
+      "source": "коммунизм как наука",
+      "target": "comunismo come scienza",
+      "category": "concept"
+    },
+    {
+      "source": "научный коммунизм",
+      "target": "comunismo scientifico",
+      "category": "concept"
+    },
+    {
+      "source": "научный социализм",
+      "target": "socialismo scientifico",
+      "category": "concept"
+    },
+    {
+      "source": "первобытный коммунизм",
+      "target": "comunismo primitivo",
+      "category": "concept"
+    },
+    {
+      "source": "коммунистический идеал|коммунистического идеала",
+      "target": "ideale comunista",
+      "category": "concept"
+    },
+    {
+      "source": "общественный идеал",
+      "target": "ideale sociale",
+      "category": "concept"
+    },
+    {
+      "source": "строительство коммунизма|Строительство коммунизма",
+      "target": "edificazione del comunismo",
+      "category": "concept"
+    },
+    {
+      "source": "социалистическое строительство",
+      "target": "edificazione socialista",
+      "category": "concept"
+    },
+    {
+      "source": "стихийное движение",
+      "target": "movimento spontaneo",
+      "category": "concept",
+      "_note": "стихийный = spontaneo"
+    },
+    {
+      "source": "классовая позиция|классовую позицию|классовой позиции",
+      "target": "posizione di classe",
+      "category": "concept"
+    },
+    {
+      "source": "классовая борьба|классовой борьбы|классовой борьбе",
+      "target": "lotta di classe",
+      "category": "concept"
+    },
+    {
+      "source": "теоретическая борьба|теоретической борьбе|теоретической борьбы|теоретической борьбой",
+      "target": "lotta teorica",
+      "category": "concept"
+    },
+    {
+      "source": "классовые противоположности|классовыми противоположностями",
+      "target": "antagonismi di classe",
+      "category": "concept",
+      "_note": "Manifesto"
+    },
+    {
+      "source": "сословный принцип",
+      "target": "principio cetuale",
+      "category": "concept"
+    },
+    {
+      "source": "революционная теория|революционной теории",
+      "target": "teoria rivoluzionaria",
+      "category": "concept"
+    },
+    {
+      "source": "государство|государства|государств|государстве|Государство|государствами|государством|государству|Государстве",
+      "target": "Stato",
+      "category": "concept",
+      "_note": "capitalized for the political state"
+    },
+    {
+      "source": "отмирание государства|отмирания государства",
+      "target": "estinzione dello Stato",
+      "category": "concept",
+      "_note": "Engels/Lenin"
+    },
+    {
+      "source": "самоуничтожение государства|самоуничтожения государства",
+      "target": "autosoppressione dello Stato",
+      "category": "concept"
+    },
+    {
+      "source": "правовое государство|правовом государстве",
+      "target": "Stato di diritto",
+      "category": "concept"
+    },
+    {
+      "source": "государственная машина|государственной машины|государственную машину",
+      "target": "macchina statale",
+      "category": "concept"
+    },
+    {
+      "source": "аппарат подавления",
+      "target": "apparato di repressione",
+      "category": "concept"
+    },
+    {
+      "source": "господствующий класс|господствующего класса",
+      "target": "classe dominante",
+      "category": "concept"
+    },
+    {
+      "source": "правящий класс|правящего класса",
+      "target": "classe dominante",
+      "category": "concept"
+    },
+    {
+      "source": "чиновник|чиновники|чиновников|чиновнику|Чиновник|чиновника",
+      "target": "funzionario",
+      "category": "concept"
+    },
+    {
+      "source": "самоуправление|самоуправления|Самоуправление",
+      "target": "autogoverno",
+      "category": "concept"
+    },
+    {
+      "source": "органы общественного самоуправления",
+      "target": "organi di autogoverno sociale",
+      "category": "concept"
+    },
+    {
+      "source": "самоорганизация|самоорганизации",
+      "target": "auto-organizzazione",
+      "category": "concept"
+    },
+    {
+      "source": "учёт и контроль|учёта и контроля|Учёт и контроль|учёте и контроле",
+      "target": "calcolo e controllo",
+      "category": "quote",
+      "_note": "Lenin, Stato e rivoluzione"
+    },
+    {
+      "source": "Вся власть советам",
+      "target": "Tutto il potere ai soviet",
+      "category": "phrase"
+    },
+    {
+      "source": "каждая кухарка должна научиться управлять государством",
+      "target": "ogni cuoca deve imparare a governare lo Stato",
+      "category": "quote",
+      "_note": "Lenin"
+    },
+    {
+      "source": "кухарка|кухарку",
+      "target": "cuoca",
+      "category": "concept"
+    },
+    {
+      "source": "в музей древностей, рядом с прялкой и с бронзовым топором",
+      "target": "nel museo delle antichità, accanto alla rocca e all'ascia di bronzo",
+      "category": "quote",
+      "_note": "Engels"
+    },
+    {
+      "source": "взятие средств производства во владение государством от имени всего общества|взятия средств производства во владение государством от имени всего общества",
+      "target": "presa di possesso dei mezzi di produzione da parte dello Stato in nome della società",
+      "category": "quote",
+      "_note": "Engels, Anti-Dühring"
+    },
+    {
+      "source": "свободное развитие каждого является условием свободного развития всех",
+      "target": "il libero sviluppo di ciascuno è condizione del libero sviluppo di tutti",
+      "category": "quote",
+      "_note": "Manifesto"
+    },
+    {
+      "source": "коммунисты могут выразить свою теорию одним положением: уничтожение частной собственности",
+      "target": "i comunisti possono riassumere la loro teoria in questa unica espressione: abolizione della proprietà privata",
+      "category": "quote",
+      "_note": "Manifesto"
+    },
+    {
+      "source": "Экспроприация земельной собственности и обращение земельной ренты на покрытие государственных расходов",
+      "target": "Espropriazione della proprietà fondiaria e impiego della rendita fondiaria per le spese dello Stato",
+      "category": "quote",
+      "_note": "Manifesto, first measure"
+    },
+    {
+      "source": "энергический принцип ближайшего будущего",
+      "target": "principio energico del prossimo avvenire",
+      "category": "quote",
+      "_note": "Manoscritti 1844"
+    },
+    {
+      "source": "свободная игра физических и умственных сил|свободной игре физических и умственных сил",
+      "target": "libero gioco delle forze fisiche e intellettuali",
+      "category": "quote",
+      "_note": "Capitale I"
+    },
+    {
+      "source": "царство свободы|Царство свободы",
+      "target": "regno della libertà",
+      "category": "quote",
+      "_note": "Capitale III"
+    },
+    {
+      "source": "Мы не утописты",
+      "target": "Non siamo utopisti",
+      "category": "phrase",
+      "_note": "Lenin"
+    },
+    {
+      "source": "любовь – теорема, которую нужно доказывать каждый день",
+      "target": "l'amore è un teorema che bisogna dimostrare ogni giorno",
+      "category": "quote",
+      "_note": "Gorin"
+    },
+    {
+      "source": "Без революционной теории не может быть и революционного движения",
+      "target": "Senza teoria rivoluzionaria non vi può essere movimento rivoluzionario",
+      "category": "quote",
+      "_note": "Lenin, Che fare?"
+    },
+    {
+      "source": "ум, честь и совесть нашей эпохи",
+      "target": "l'intelligenza, l'onore e la coscienza della nostra epoca",
+      "category": "quote",
+      "_note": "Lenin"
+    },
+    {
+      "source": "Оружие критики не может, конечно, заменить критики оружием",
+      "target": "L'arma della critica non può certo sostituire la critica delle armi",
+      "category": "quote",
+      "_note": "Marx"
+    },
+    {
+      "source": "материальная сила|материальной силой|материальными силами|материальных сил",
+      "target": "forza materiale",
+      "category": "concept"
+    },
+    {
+      "source": "каждый шаг действительного движения важнее дюжины программ",
+      "target": "ogni passo del movimento reale vale più di una dozzina di programmi",
+      "category": "quote",
+      "_note": "Marx to Bracke"
+    },
+    {
+      "source": "Пролетарии всех стран, соединяйтесь!|ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ",
+      "target": "Proletari di tutti i paesi, unitevi!",
+      "category": "phrase"
+    },
+    {
+      "source": "подвиг Фейербаха|подвиге Фейербаха",
+      "target": "la grande impresa di Feuerbach",
+      "category": "quote",
+      "_note": "Manoscritti 1844"
+    },
+    {
+      "source": "земная основа|земной основе|земной основы",
+      "target": "base terrena",
+      "category": "concept",
+      "_note": "Tesi su Feuerbach IV"
+    },
+    {
+      "source": "святое семейство|святого семейства",
+      "target": "sacra famiglia",
+      "category": "phrase",
+      "_note": "Tesi su Feuerbach IV"
+    },
+    {
+      "source": "самоотчуждение|самоотчуждения",
+      "target": "autoalienazione",
+      "category": "concept"
+    },
+    {
+      "source": "отчуждение|отчуждения|отчуждён",
+      "target": "alienazione",
+      "category": "concept",
+      "_note": "отчуждённый = alienato"
+    },
+    {
+      "source": "кулачное право|кулачном праве",
+      "target": "diritto del pugno",
+      "category": "concept",
+      "_note": "Faustrecht"
+    },
+    {
+      "source": "право сильного",
+      "target": "diritto del più forte",
+      "category": "concept"
+    },
+    {
+      "source": "оппортунизм|оппортунизма",
+      "target": "opportunismo",
+      "category": "concept"
+    },
+    {
+      "source": "прудонизм",
+      "target": "proudhonismo",
+      "category": "concept"
+    },
+    {
+      "source": "теоретический смысл|теоретического смысла",
+      "target": "senso teorico",
+      "category": "concept",
+      "_note": "Engels"
+    },
+    {
+      "source": "партийность",
+      "target": "spirito di partito",
+      "category": "concept",
+      "_note": "Leninist partijnost'"
+    },
+    {
+      "source": "политическая экономия|политическую экономию",
+      "target": "economia politica",
+      "category": "concept"
+    },
+    {
+      "source": "объективная истина",
+      "target": "verità oggettiva",
+      "category": "concept"
+    },
+    {
+      "source": "общечеловеческий|общечеловеческое",
+      "target": "universalmente umano",
+      "category": "concept"
+    },
+    {
+      "source": "целеполагание|целеполагания",
+      "target": "posizione di fini",
+      "category": "concept",
+      "_note": "Zwecksetzung"
+    },
+    {
+      "source": "духовная культура|духовной культуры",
+      "target": "cultura spirituale",
+      "category": "concept"
+    },
+    {
+      "source": "мир идей|миру идей",
+      "target": "mondo delle idee",
+      "category": "concept"
+    },
+    {
+      "source": "профессиональный кретинизм",
+      "target": "cretinismo professionale",
+      "category": "concept",
+      "_note": "Marx"
+    },
+    {
+      "source": "в конечном счёте|в конечном счете",
+      "target": "in ultima istanza",
+      "category": "phrase",
+      "_note": "Engels"
+    },
+    {
+      "source": "в конечном счете|в конечном счёте",
+      "target": "in ultima istanza",
+      "category": "phrase"
+    },
+    {
+      "source": "понятие|понятия|понятию|понятием|понятии|понятий|понятиям|понятиями|понятиях",
+      "target": "concetto",
+      "category": "concept",
+      "_note": "opposed to представление"
+    },
+    {
+      "source": "представление|представления|представлению|представлением|представлении|представлений|представлениям|представлениями|представлениях",
+      "target": "rappresentazione",
+      "category": "concept",
+      "_note": "opposed to понятие"
+    },
+    {
+      "source": "мышление|мышления|мышлении|мышлению",
+      "target": "pensiero",
+      "category": "concept"
+    },
+    {
+      "source": "субъект мышления|субъекте мышления|субъектом мышления",
+      "target": "soggetto del pensiero",
+      "category": "concept"
+    },
+    {
+      "source": "субъект исторического действия|субъектом исторического действия",
+      "target": "soggetto dell'azione storica",
+      "category": "concept"
+    },
+    {
+      "source": "культура мышления|культуру мышления",
+      "target": "cultura del pensiero",
+      "category": "concept"
+    },
+    {
+      "source": "диалектическое мышление|диалектического мышления",
+      "target": "pensiero dialettico",
+      "category": "concept"
+    },
+    {
+      "source": "чувственность|чувственности|чувственностью",
+      "target": "sensibilità",
+      "category": "concept"
+    },
+    {
+      "source": "нравственность|нравственности|нравственностью",
+      "target": "moralità",
+      "category": "concept",
+      "_note": "not eticità"
+    },
+    {
+      "source": "научная картина мира|научной картиной мира",
+      "target": "immagine scientifica del mondo",
+      "category": "concept"
+    },
+    {
+      "source": "политехническое образование|Политехническое образование",
+      "target": "istruzione politecnica",
+      "category": "concept"
+    },
+    {
+      "source": "политехнизм|политехнизма",
+      "target": "politecnismo",
+      "category": "concept"
+    },
+    {
+      "source": "планирование|планированию|Планирование|планирования",
+      "target": "pianificazione",
+      "category": "concept"
+    },
+    {
+      "source": "конкретно-исторический|конкретно-исторических|конкретно-исторически",
+      "target": "storico-concreto",
+      "category": "concept"
+    },
+    {
+      "source": "совместно-раздельная деятельность|совместно-раздельной деятельности",
+      "target": "attività congiunta-separata",
+      "category": "concept",
+      "_note": "quoted term of art"
+    },
+    {
+      "source": "быт|быта|быту|бытом|быте",
+      "target": "vita quotidiana",
+      "category": "concept",
+      "_note": "byt"
+    },
+    {
+      "source": "общественное питание|общественного питания",
+      "target": "ristorazione collettiva",
+      "category": "concept"
+    },
+    {
+      "source": "общепит|общепита",
+      "target": "ristorazione collettiva",
+      "category": "concept"
+    },
+    {
+      "source": "обыватель|обывателя",
+      "target": "filisteo",
+      "category": "concept"
+    },
+    {
+      "source": "мещанский",
+      "target": "piccolo-borghese",
+      "category": "concept"
+    },
+    {
+      "source": "воспитание|воспитании|воспитания|Воспитание",
+      "target": "educazione",
+      "category": "concept",
+      "_note": "воспитатель = educatore"
+    },
+    {
+      "source": "общественное воспитание|общественном воспитании",
+      "target": "educazione sociale",
+      "category": "concept"
+    },
+    {
+      "source": "коллектив|коллективе|коллектива|коллективу|коллективах|коллективов",
+      "target": "collettivo",
+      "category": "concept"
+    },
+    {
+      "source": "первичный коллектив",
+      "target": "collettivo primario",
+      "category": "concept",
+      "_note": "Makarenko"
+    },
+    {
+      "source": "трудовой коллектив|трудового коллектива|трудового) коллектива",
+      "target": "collettivo di lavoro",
+      "category": "concept"
+    },
+    {
+      "source": "половая любовь",
+      "target": "amore sessuale",
+      "category": "concept",
+      "_note": "Engels"
+    },
+    {
+      "source": "семейные ценности|семейных ценностей",
+      "target": "valori familiari",
+      "category": "concept"
+    },
+    {
+      "source": "коммуна|Коммуне|коммуне|коммуны|коммуну|коммун|Коммуна",
+      "target": "comune",
+      "category": "concept",
+      "_note": "feminine: la comune, le comuni"
+    },
+    {
+      "source": "свободное ПО|свободного ПО|свободному ПО|свободным ПО",
+      "target": "software libero",
+      "category": "concept"
+    },
+    {
+      "source": "программное обеспечение|программного обеспечения",
+      "target": "software",
+      "category": "concept"
+    },
+    {
+      "source": "открытый код",
+      "target": "codice aperto",
+      "category": "concept"
+    },
+    {
+      "source": "открытое программное обеспечение|Открытое программное обеспечение",
+      "target": "software a codice aperto",
+      "category": "concept"
+    },
+    {
+      "source": "исходники|исходников",
+      "target": "sorgenti",
+      "category": "concept"
+    },
+    {
+      "source": "база данных|баз данных|базы данных|базам данных|базами данных",
+      "target": "database",
+      "category": "concept"
+    },
+    {
+      "source": "общедоступная база данных|общедоступные базы данных",
+      "target": "database ad accesso libero",
+      "category": "concept"
+    },
+    {
+      "source": "пространственная база данных|пространственные базы данных",
+      "target": "database geospaziale",
+      "category": "concept"
+    },
+    {
+      "source": "информационная грамотность|информационной грамотности",
+      "target": "alfabetizzazione informatica",
+      "category": "concept"
+    },
+    {
+      "source": "компьютерная грамотность|компьютерной грамотности|компьютерную грамотность",
+      "target": "alfabetizzazione informatica",
+      "category": "concept"
+    },
+    {
+      "source": "общегосударственная система управления экономикой|Общегосударственную систему управления экономикой",
+      "target": "sistema statale di gestione dell'economia",
+      "category": "concept",
+      "_note": "Gluškov's OGAS"
+    }
+  ]
+}
