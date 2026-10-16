@@ -33,7 +33,7 @@ This repository contains three compact LaTeX editions of the same political-theo
 - `ukrainian/` — Ukrainian edition: **Що таке комунізм?**
 - `italiano/` — Italian edition: **Che cos'è il comunismo?**
 
-The Italian edition is a translation from Russian made with `translategemma:27b`.
+The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source.
 
 ### По-русски
 
@@ -43,7 +43,7 @@ The Italian edition is a translation from Russian made with `translategemma:27b`
 
 Questo testo presenta il comunismo non come mito, insulto o slogan nostalgico, ma come una teoria seria per comprendere e trasformare la società. Nelle prime pagine insiste su tre idee: il termine «comunismo» è stato storicamente deformato, molti ne parlano senza conoscerne il significato scientifico, e la teoria comunista deve essere recuperata come strumento pratico per leggere di nuovo la società contemporanea, lo sfruttamento e l’emancipazione.
 
-La versione italiana inclusa in questo repository è stata tradotta dal russo con `translategemma:27b`.
+La versione italiana inclusa in questo repository è stata tradotta dal russo con Claude Opus 5.5 tramite TranslateBooksWithLLMs: una traduzione guidata da un glossario, seguita da una revisione bilingue sul testo russo.
 
 ## Repository layout
 

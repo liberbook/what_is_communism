@@ -217,13 +217,15 @@ def build_pandoc(cfg: dict[str, object], out_dir: Path, flat_tex: Path) -> None:
         f"title={title}",
         "--metadata",
         f"author={author}",
+        "--metadata",
+        f"lang={cfg['lang']}",
     ]
     markdown_source = re.sub(r"^\s*\\label\{sec:[^}]+\}\s*$\n?", "", read_text(flat_tex), flags=re.MULTILINE)
     with tempfile.NamedTemporaryFile("w", suffix=".tex", delete=False, encoding="utf-8") as tmp:
         tmp.write(markdown_source)
         markdown_flat_tex = Path(tmp.name)
     jobs = {
-        f"{basename}.html": ["--standalone", "--self-contained", "--toc", "--toc-depth=1", "--metadata", f"lang={cfg['lang']}"],
+        f"{basename}.html": ["--standalone", "--self-contained", "--toc", "--toc-depth=1"],
         f"{basename}.epub": [f"--epub-cover-image={images_dir / 'img-000.jpg'}"],
         f"{basename}.fb2": [],
         f"{basename}.md": ["-t", "gfm+footnotes", "--wrap=none", "--standalone", "--toc", "--toc-depth=1"],
