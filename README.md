@@ -33,7 +33,7 @@ This repository contains three compact LaTeX editions of the same political-theo
 - `ukrainian/` — Ukrainian edition: **Що таке комунізм?**
 - `italiano/` — Italian edition: **Che cos'è il comunismo?**
 
-The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (407 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`.
+The Italian edition is a translation from Russian made with Claude Opus 5.5 (`claude-opus-5-5`) through [TranslateBooksWithLLMs](https://github.com/hydropix/TranslateBooksWithLLMs): a glossary-driven translation pass followed by a bilingual review pass against the Russian source. The Russian -> Italian glossary used for it (407 terms, with the inflected Russian forms) is in [`italiano/glossary.ru-it.json`](italiano/glossary.ru-it.json); it can be passed to TranslateBooksWithLLMs with `--glossary`. Rebuild it with `python3 build_glossary.py` after editing the term list in that script.
 
 ### По-русски
 
@@ -53,6 +53,7 @@ ukrainian/  # self-contained LaTeX source for the Ukrainian edition
 italiano/   # self-contained LaTeX source for the Italian edition
             #   (italiano/glossary.ru-it.json: ru -> it translation glossary)
 build.sh    # builds PDF + print PDF + EPUB + FB2 + HTML + Markdown
+build_glossary.py  # rebuilds italiano/glossary.ru-it.json from its term list and the Russian text
 Dockerfile  # minimal containerized build environment
 ```
 
