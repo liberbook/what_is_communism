@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run every AI-free check; exit code 1 if any fails. Used by CI after the build.
 
-  tools/render_docs.py --check   site/index.html and README.md match languages.toml
+  tools/render_docs.py --check   site pages and README.md match languages.toml
   tools/checks/structure.py      translated parts against the source
   tools/checks/glossary.py       glossary targets used in the translations
   tools/checks/build.py          outputs of build_book.py (skipped with --no-build)

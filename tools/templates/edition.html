@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="$lang$" xml:lang="$lang$">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="pandoc">
+<title>$pagetitle$</title>
+$for(author-meta)$
+<meta name="author" content="$author-meta$">
+$endfor$
+$for(header-includes)$
+$header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<div class="layout">
+<nav id="TOC" class="toc" role="doc-toc" aria-label="$toc-title$">
+<p class="toc-title">$toc-title$</p>
+$table-of-contents$
+</nav>
+<main id="text">
+<header id="title-block-header" class="title-block">
+<h1 class="title">$title$</h1>
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+</header>
+$body$
+</main>
+</div>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

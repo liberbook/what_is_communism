@@ -12,6 +12,8 @@
 #   title, author        book title and author line in that language
 #   basename             base file name of every output (PDF, EPUB, ...)
 #   read_online, download, files.{pdf,print,booklet}   landing-page labels
+#   about, contents      landing-page card: one-sentence description, table-of-contents label
+#   [ui]                 labels of the online HTML edition (languages menu, resume, chapters, theme, text size)
 #   source = true        the original (exactly one edition)
 #   Translated editions also have:
 #   target_language      language name given to the translator ("English")
@@ -37,10 +39,22 @@ basename = "chto_takoe_kommunizm"
 read_online = "Читать онлайн"
 download = "Скачать"
 files = { pdf = "PDF", print = "PDF A5 для печати", booklet = "брошюра A4" }
+about = "Коммунизм не как миф, ругательство или ностальгия, а как научная теория: что делает общество коммунистическим и как в нём устроены собственность, труд, управление, семья и сознание."
+contents = "Содержание"
 source = true
 parts = ["01_izobretaem_ochki", "02_predislovie", "03_osnovanie", "04_kommunizm_realnost",
          "05_obshhaya_sobstvennost", "06_necessitatem_truda", "07_kommunizm_upravlenie",
          "08_kommunizm_lichnost", "09_kommunizm_semya", "10_kommunizm_soznanie", "11_zaklyuchenie"]
+[edition.ui]
+languages = "Все языки"
+resume = "Продолжить чтение"
+prev = "Предыдущая глава"
+next = "Следующая глава"
+theme = "Тема"
+auto = "Авто"
+light = "Светлая"
+dark = "Тёмная"
+text_size = "Размер текста"
 
 [[edition]]
 code = "uk"
@@ -55,9 +69,21 @@ basename = "shcho_take_komunizm"
 read_online = "Читати онлайн"
 download = "Завантажити"
 files = { pdf = "PDF", print = "PDF A5 для друку", booklet = "брошура A4" }
+about = "Комунізм не як міф, лайка чи ностальгія, а як наукова теорія: що робить суспільство комуністичним і як у ньому влаштовані власність, праця, управління, сім’я і свідомість."
+contents = "Зміст"
 parts = ["01_izobretaem_ochki", "02_predislovie", "03_osnovanie", "04_kommunizm_realnost",
          "05_obshhaya_sobstvennost", "06_necessitatem_truda", "07_kommunizm_upravlenie",
          "08_kommunizm_lichnost", "09_kommunizm_semya", "10_kommunizm_soznanie", "11_zaklyuchenie"]
+[edition.ui]
+languages = "Усі мови"
+resume = "Продовжити читання"
+prev = "Попередній розділ"
+next = "Наступний розділ"
+theme = "Тема"
+auto = "Авто"
+light = "Світла"
+dark = "Темна"
+text_size = "Розмір тексту"
 
 [[edition]]
 code = "it"
@@ -72,11 +98,23 @@ basename = "che_cose_il_comunismo"
 read_online = "Leggi online"
 download = "Scarica"
 files = { pdf = "PDF", print = "PDF A5 da stampare", booklet = "opuscolo A4" }
+about = "Il comunismo non come mito, insulto o nostalgia, ma come teoria scientifica: che cosa rende comunista una società e come vi si organizzano proprietà, lavoro, gestione, famiglia e coscienza."
+contents = "Indice"
 target_language = "Italian"
 glossary = "italiano/glossary.ru-it.json"
 parts = ["01_inventiamo_occhiali", "02_prefazione", "03_fondamenti", "04_comunismo_realta",
          "05_proprieta_comune", "06_opera_necessaria", "07_comunismo_gestione",
          "08_comunismo_individuo", "09_comunismo_famiglia", "10_comunismo_coscienza", "11_conclusione"]
+[edition.ui]
+languages = "Tutte le lingue"
+resume = "Riprendi la lettura"
+prev = "Capitolo precedente"
+next = "Capitolo successivo"
+theme = "Tema"
+auto = "Auto"
+light = "Chiaro"
+dark = "Scuro"
+text_size = "Dimensione del testo"
 [edition.typography]
 quotes = ["«", "»"]
 inner_quotes = ["“", "”"]
@@ -103,11 +141,23 @@ basename = "what_is_communism"
 read_online = "Read online"
 download = "Download"
 files = { pdf = "PDF", print = "PDF A5 for print", booklet = "A4 booklet" }
+about = "Communism not as a myth, an insult or nostalgia, but as a scientific theory: what makes a society communist, and how property, labour, management, the family and consciousness are organised in it."
+contents = "Contents"
 target_language = "English"
 glossary = "english/glossary.ru-en.json"
 parts = ["01_inventing_spectacles", "02_preface", "03_foundation", "04_communism_reality",
          "05_common_property", "06_necessary_labour", "07_communism_management",
          "08_communism_personality", "09_communism_family", "10_communism_consciousness", "11_conclusion"]
+[edition.ui]
+languages = "All languages"
+resume = "Continue reading"
+prev = "Previous chapter"
+next = "Next chapter"
+theme = "Theme"
+auto = "Auto"
+light = "Light"
+dark = "Dark"
+text_size = "Text size"
 [edition.typography]
 quotes = ["“", "”"]
 inner_quotes = ["‘", "’"]

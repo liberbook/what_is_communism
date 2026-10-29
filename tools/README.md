@@ -17,7 +17,8 @@ deterministic and needs no AI.
 | `checks/build.py` | every output exists, LaTeX errors, titles in the PDF, EPUB/FB2/HTML language |
 | `checks/all.py` | all of the above plus `render_docs.py --check`; CI runs it after the build |
 | `report/report.py CODE --run NAME` / `--a X --b Y` | side-by-side HTML (Russian, A, B with changes highlighted, flagged paragraphs) |
-| `render_docs.py` | regenerates `site/index.html` and the edition blocks of the main README; `--site DIR` assembles GitHub Pages |
+| `render_docs.py` | regenerates `site/index.html`, `site/wake-up/index.html`, `site/wake-up/<code>/index.html` (ru, it, en) and the edition blocks of the main README; `--site DIR` assembles GitHub Pages |
+| `templates/edition.html`, `.css`, `.js` | the online HTML edition built by `build_book.py`: contents sidebar, reading progress and resume, chapter links, footnote pop-ups, light/dark theme and text size; labels in `[edition.ui]` of `languages.toml` |
 
 Requirements: Python 3.11+, the TeX Live / pandoc / poppler toolchain of the
 main README, and for the model steps

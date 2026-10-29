@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html
+import json
 import os
 import re
 import shutil
@@ -15,9 +16,12 @@ ROOT = Path(__file__).resolve().parent
 OUT_ROOT = ROOT / "out"
 MARKDOWN_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}
 
+LANGUAGES = tomllib.loads((ROOT / "languages.toml").read_text(encoding="utf-8"))
+TEMPLATES = ROOT / "tools" / "templates"
+
+
 def load_configs() -> dict[str, dict[str, object]]:
     """Editions to build, from languages.toml (keyed by source directory name)."""
-    data = tomllib.loads((ROOT / "languages.toml").read_text(encoding="utf-8"))
     return {
         e["dir"]: {
             "src": ROOT / e["dir"],
@@ -25,8 +29,9 @@ def load_configs() -> dict[str, dict[str, object]]:
             "author": e["author"],
             "lang": e["lang"],
             "basename": e["basename"],
+            "edition": e,
         }
-        for e in data["edition"]
+        for e in LANGUAGES["edition"]
     }
 
 
@@ -194,6 +199,85 @@ def build_booklet_pdf(src_dir: Path, out_dir: Path) -> None:
         shutil.copy2(Path(tmp) / "booklet.pdf", dst_pdf)
 
 
+ICONS = {
+    "toc": '<path d="M4 6h16M4 12h16M4 18h10"/>',
+    "globe": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/>',
+    "type": '<path d="M4 18 9 6l5 12M5.8 14h6.4M15 18l3-7.5 3 7.5M15.9 16h4.2"/>',
+    "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
+}
+
+
+def icon(name: str) -> str:
+    return f'<svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[name]}</svg>'
+
+
+def html_chrome(cfg: dict[str, object], tmp: Path) -> list[str]:
+    """Pandoc arguments for the online edition: template, styles, top bar, script."""
+    ed = cfg["edition"]
+    assert isinstance(ed, dict)
+    e = lambda s: html.escape(str(s), quote=True)
+    site = LANGUAGES["site"]
+    repo = LANGUAGES["repo"]
+    ui = ed["ui"]
+    url = f"{site}{ed['code']}/"
+    dl = lambda name: f"https://github.com/{repo}/releases/latest/download/{name}"
+    b = ed["basename"]
+    description = ed.get("about") or ed["title"]
+    head = f"""<meta name="description" content="{e(description)}">
+<link rel="canonical" href="{url}" data-external="1">
+<meta property="og:type" content="book">
+<meta property="og:title" content="{e(ed['title'])}">
+<meta property="og:description" content="{e(description)}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{site}og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf9f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{site}favicon.svg" type="image/svg+xml" data-external="1">
+<link rel="preconnect" href="https://fonts.googleapis.com" data-external="1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-external="1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;display=swap" data-external="1">
+<script>try{{var t=localStorage.getItem("wic:theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;var f=localStorage.getItem("wic:fs");if(f)document.documentElement.style.setProperty("--fs",f+"px")}}catch(e){{}}</script>
+<style>
+{read_text(TEMPLATES / "edition.css")}</style>"""
+    langs = []
+    for other in LANGUAGES["edition"]:
+        current = ' aria-current="true"' if other["code"] == ed["code"] else ""
+        langs.append(f'<a href="{site}{other["code"]}/" data-base="{site}{other["code"]}/" data-parts="{e(" ".join(other["parts"]))}" '
+                     f'lang="{other["lang"]}" hreflang="{other["lang"]}"{current}>'
+                     f'{e(other["name"])}<small>{other["code"].upper()}</small></a>')
+    files = ed["files"]
+    downloads = "".join(f'<a href="{dl(name)}">{e(label)}<small>{ext}</small></a>' for label, name, ext in [
+        (files["pdf"], f"{b}.pdf", "A4"), (files["print"], f"{b}_print.pdf", "A5"), (files["booklet"], f"{b}_booklet_a4.pdf", "A4"),
+        ("EPUB", f"{b}.epub", "epub"), ("FB2", f"{b}.fb2", "fb2")])
+    data = json.dumps({"key": ed["code"], "ui": ui}, ensure_ascii=False).replace("</", "<\\/")
+    before = f"""<header class="topbar">
+<button class="btn only-narrow" id="toc-btn" type="button" aria-label="{e(ed.get('contents', 'Contents'))}">{icon("toc")}</button>
+<a class="book" href="{site}"><b>{e(ed['title'])}</b> · {e(ed['author'])}</a>
+<details class="menu"><summary class="btn" aria-label="{e(ui['languages'])}">{icon("globe")}<span class="only-wide">{ed['code'].upper()}</span></summary>
+<div class="pop">{"".join(langs)}<hr><a href="{site}">{e(ui['languages'])} →</a></div></details>
+<details class="menu"><summary class="btn" aria-label="{e(ed['download'])}">{icon("download")}</summary>
+<div class="pop"><span class="label">{e(ed['download'])}</span>{downloads}</div></details>
+<details class="menu"><summary class="btn" aria-label="{e(ui['theme'])}, {e(ui['text_size'])}">{icon("type")}</summary>
+<div class="pop"><span class="label">{e(ui['text_size'])}</span>
+<div class="seg"><button type="button" data-fs="-1" aria-label="−">A−</button><button type="button" data-fs="1" aria-label="+">A+</button></div>
+<span class="label">{e(ui['theme'])}</span>
+<div class="seg"><button type="button" data-theme-set="auto">{e(ui['auto'])}</button><button type="button" data-theme-set="light">{e(ui['light'])}</button><button type="button" data-theme-set="dark">{e(ui['dark'])}</button></div></div></details>
+<div class="progress" aria-hidden="true"></div>
+</header>
+<div class="scrim" aria-hidden="true"></div>"""
+    after = f"""<script id="edition-data" type="application/json">{data}</script>
+<script>
+{read_text(TEMPLATES / "edition.js")}</script>"""
+    paths = {}
+    for name, content in {"head": head, "before": before, "after": after}.items():
+        paths[name] = tmp / f"{name}.html"
+        write_text(paths[name], content)
+    return ["--template", str(TEMPLATES / "edition.html"), "--section-divs",
+            "-V", f"toc-title={ed.get('contents', 'Contents')}",
+            "-H", str(paths["head"]), "-B", str(paths["before"]), "-A", str(paths["after"])]
+
+
 def build_pandoc(cfg: dict[str, object], out_dir: Path, flat_tex: Path) -> None:
     src_dir = cfg["src"]
     title = cfg["title"]
@@ -218,8 +302,9 @@ def build_pandoc(cfg: dict[str, object], out_dir: Path, flat_tex: Path) -> None:
     with tempfile.NamedTemporaryFile("w", suffix=".tex", delete=False, encoding="utf-8") as tmp:
         tmp.write(markdown_source)
         markdown_flat_tex = Path(tmp.name)
+    chrome_dir = Path(tempfile.mkdtemp())
     jobs = {
-        f"{basename}.html": ["--standalone", "--self-contained", "--toc", "--toc-depth=1"],
+        f"{basename}.html": ["--standalone", "--self-contained", "--toc", "--toc-depth=1", *html_chrome(cfg, chrome_dir)],
         f"{basename}.epub": [f"--epub-cover-image={images_dir / 'img-000.jpg'}"],
         f"{basename}.fb2": [],
         f"{basename}.md": ["-t", "gfm+footnotes", "--wrap=none", "--standalone", "--toc", "--toc-depth=1"],
@@ -232,6 +317,7 @@ def build_pandoc(cfg: dict[str, object], out_dir: Path, flat_tex: Path) -> None:
     finally:
         if markdown_flat_tex.exists():
             markdown_flat_tex.unlink()
+        shutil.rmtree(chrome_dir, ignore_errors=True)
 
 
 def clean_aux_files(out_dir: Path) -> None:

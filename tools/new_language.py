@@ -12,7 +12,7 @@ Example:
   python3 tools/new_language.py de --dir german --name Deutsch --english-name German \\
       --title "Was ist Kommunismus?" --author "Gruppe Engels" --basename was_ist_kommunismus \\
       --babel ngerman --read-online "Online lesen" --download Herunterladen \\
-      --print-label "PDF A5 zum Drucken" --booklet-label "Broschüre A4" \\
+      --print-label "PDF A5 zum Drucken" --booklet-label "Broschüre A4" --contents Inhalt \\
       --credit "Aus dem Russischen übersetzt mit Claude Opus 5.5 und TranslateBooksWithLLMs"
 """
 from __future__ import annotations
@@ -55,6 +55,8 @@ def main() -> None:
     ap.add_argument("--download", default="Download")
     ap.add_argument("--print-label", default="PDF A5 for print")
     ap.add_argument("--booklet-label", default="A4 booklet")
+    ap.add_argument("--about", default="", help="one-sentence description on the landing-page card")
+    ap.add_argument("--contents", default="Contents", help="table-of-contents label on the landing-page card")
     ap.add_argument("--credit", default="", help="small line on the title page (optional)")
     ap.add_argument("--subject", default="Theory of communism", help="PDF subject metadata")
     ap.add_argument("--keywords", default="communism, Marxism, Marx, Engels, Lenin", help="PDF keywords metadata")
@@ -92,6 +94,7 @@ def main() -> None:
     (dest / "preamble.tex").write_text(pre, encoding="utf-8")
 
     t, pr = like.typography, like.prompt
+    ui = "\n".join(f"{k} = {toml_str(v)}" for k, v in like.ui.items())
     block = f"""
 [[edition]]
 code = {toml_str(args.code)}
@@ -106,9 +109,14 @@ basename = {toml_str(args.basename)}
 read_online = {toml_str(args.read_online)}
 download = {toml_str(args.download)}
 files = {{ pdf = "PDF", print = {toml_str(args.print_label)}, booklet = {toml_str(args.booklet_label)} }}
+about = {toml_str(args.about)}
+contents = {toml_str(args.contents)}
 target_language = {toml_str(args.english_name)}
 glossary = {toml_str(f"{args.dir}/glossary.ru-{args.code}.json")}
 parts = {toml_list(parts)}
+[edition.ui]
+# copied from the {like.code} edition: translate into {args.english_name}
+{ui}
 [edition.typography]
 # copied from the {like.code} edition: set the conventions of {args.english_name}
 quotes = {toml_list(t['quotes'])}
